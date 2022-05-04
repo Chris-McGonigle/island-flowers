@@ -1,108 +1,414 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Island Flowers by Sarah
 
-Welcome Chris McGonigle,
+PREAMBLE GOES HERE
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Desktop View]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Mobile View]()
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+You can view a live version of the [website]
 
-Another blue button should appear to click: _Open Browser_.
+## Table of Contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. [Site Design Considerations](#site-design-considerations)
+    * [User Stories](#user-stories)
+        * [EPIC 1 - User Accounts](#epic-1---user-accounts)
+        * [EPIC 2 - Shop Browsing](#epic-2---shop-browsing) 
+        * [EPIC 3 - Checkout & Bag](#epic-3---checkout-and-bag)
+        * [EPIC 4 - Site Admin](#epic-4---site-admin)
+        * [EPIC 5 - Blog](#epic-5---blog)
+    * [Wireframes](#wireframes)
+    * [Project Management](#project-management)
+2. [Data Models](#data-models)
+3. [Features](#features)
+    * [Initial Deployment Features](#initial-deployment-features)
+    * [Future Features](#future-features)    
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+    * [Bugs](#bugs)
+    * [User Story Testing](#user-story-testing)
+        * [EPIC 1 Testing](#epic-1-testing)
+        * [EPIC 2 Testing](#epic-2-testing) 
+        * [EPIC 3 Testing](#epic-3-testing)
+        * [EPIC 4 Testing](#epic-4-testing)
+        * [EPIC 5 Testing](#epic-5-testing)
+6. [Marketing](#marketing)        
+7. [Deployment](#deployment)
+8. [Credits](#credits)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Site Design Considerations
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
 
-To log into the Heroku toolbelt CLI:
+#### EPIC 1 - User accounts
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. As a User, I want to be able to register for an account using my email address, so that I can save my details for future use.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+2. As a User, I want to be able to register for an account using a social media account, so that I can save my details for future use.
 
-------
+3. As a User, I want to receive confirmation I have registered, so that I check that my account was created successfully and that my email address was correctly entered
 
-## Release History
+4. As a User, I want to be able to reset my password, so that I can regain access to my account in case I forget my password.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+5. As a User, I want to have a personalised profile page, so that I can view a history of my purchases.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+[Back to top](#table-of-contents)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<br>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### EPIC 2 - Shop Browsing
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+1. As a User, I want to view al list of products, so that I can select the item I want to purchase
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+2. As a User, I want to be able to select an individual product, so that I can see the full details of that item including price, description and sizes if applicable
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+3. As a User, I want to be able to sort the products by price, so that I can see products in my price range.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+4. As a User, I want to be able to sort the products by category, so that I can filter to the type of product I am interested in
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+5. As a User, I want to be able to search for a product by name or description, so that I find a specific product I am interested in.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+6. As a User, I want to filter the search results by price or category, so that I can further narrow down my search to find the item I am interested in.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+7. As a User, I want to be able to add items to a basket, so that I can add multiple items before having to checkout.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[Back to top](#table-of-contents)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<br>
 
-------
+#### EPIC 3 - Checkout and Bag
 
-## FAQ about the uptime script
+1. As a User, I want to be able to see a list of my chosen products, so that I can confirm what I wish to purchase.
 
-**Why have you added this script?**
+2. As a User, I want to be able to amend the size and quantity selected, so that I easily amend my order if I have made an error.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+3. As a User, I want to be clearly shown the subtotal and shipping costs, so that I easily identify the total amount I have to pay.
 
-**How will this affect me?**
+4. As a User, I want to to be able to choose different billing and shipping addresses, so that I can have the item sent elsewhere if required.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+5. As a User, I want to receive an email confirmation of my order, so that I can ensure that it was received by the vendor.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+6. As a User, I want to be able to purchase an item with out creating an account, so that I do not have to have my details saved by the vendor.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+7. As a User, I want to view an order success confirmation on screen, so that I can ensure my order was processed properly.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<br>
 
-**Can I opt out?**
+[Back to top](#table-of-contents)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<br>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+#### EPIC 4 - Site Admin
 
-**Anything more?**
+1. As a Site Owner, I want to be notified when a new account is created, so that I am able to confirm if the account is legitimate or a bot or a duplicate account.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+2. As a Site Owner, I want to be able to easily add new products, so that I am able to spend as little time as possible when updating the site.
 
----
+3. As a Site Owner, I want to be able to easily update exisiting products, so that I can change descriptions, sizes or prices easily.
 
-Happy coding!
+4. As a Site Owner, I want to be able to easily delete an exisiting product, so that I .can remove items that are no longer for sale.
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### EPIC 5 - Blog
+
+1. As a Site Owner, I want to be able to create blog posts, so that I can highlight any new products or events coming up.
+
+2. As a Site Owner, I want to have users to be able to comment on my posts, so that I produce interaction and receive feedback from customers.
+
+3. As a Site Owner, I want to give users ability to like posts, so that I can reaction to the product or post.
+
+4. As a Site Owner, I want to have users create an acount before they can comment, so that I can moderate comments and stop anonymous commenting.
+
+5. As a Site Owner, I want to display most recent blog posts on the homepage, so that I showcase news and new products without a user having to navigate to the blog page.
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Wireframes
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Project Management
+
+The Kanban Boards feature of Github Projects was used as the project management tool during the production of this website. User stories were assigned two labels, one an EPIC label, and the second using the MoSCoW prioritisation technique.
+
+EPICS were defined as User Accounts, Shop Browsing, Checkout & Bag, Site Admin and Blog. User Stories were then generated and designated as Must Have, Should Have, Could Have and Won't Have.
+
+Must Have User stories were prioritised for completion first, and these were all implemented by project end. Once completed, tasks were moved to the Done pile. 
+
+You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowers/projects/1?fullscreen=true) to see the project progress. Unfinished tasks would be aimed to be completed in future iterations.
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Data Models
+
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Features
+
+### Initial Deployment Features
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Future Features
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Technologies Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the site markup.
+* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used to style the HTML content.
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript) was used for the Browse Subjects pop up.
+* [Python3](https://en.wikipedia.org/wiki/Python_programming_language) and the Django Framework was the language used to produce the databases.
+* [Black](https://github.com/psf/black) was used to format the Python Code
+* [Balsamiq](https://balsamiq.com/) was used to produce the site wireframes.
+* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) was used to create the site icon.
+* [Font Awesome](https://fontawesome.com/) was used for the site icons.
+* [Google Fonts](https://fonts.google.com/) provided all of the fonts used on the site.
+* [Firefox Developer tool](https://developer.mozilla.org/en-US/docs/Tools) was used to test site responsiveness and to test code.
+* [Google Chrome Developer tools](https://developer.chrome.com/docs/devtools/) was used to test site responsiveness and to test code.
+* [Safari Developer tools](https://support.apple.com/en-gb/guide/safari/sfri20948/mac) was used to test site responsiveness and to test code.
+* [Github](https://github.com/Chris-McGonigle) was used as the repository hosting service.
+* [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
+* [W3C Markup](https://validator.w3.org/) and [Jigsaw validation](https://jigsaw.w3.org/) tools were used to validate the HTML and CSS used.
+* [JSHint](https://jshint.com/) was used to validate the javascript used on site.
+* [Pep8 Online](http://pep8online.com/) was used to validate the Python code.
+* [Prettier](https://prettier.io/) was used to format the HTML Code
+* [Heroku](https://www.heroku.com) was used to deploy the application.
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Testing
+
+A dedicated testing section covering validator and manual testing can be found in the [testing.md](/testing/testing.md) documentation
+
+### Bugs
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### User Story Testing
+
+#### EPIC 1 Testing
+
+1. As a User, I want to be able to register for an account using my email address, so that I can save my details for future use.
+    * RESULT - 
+
+2. As a User, I want to be able to register for an account using a social media account, so that I can save my details for future use.
+    * RESULT -
+
+3. As a User, I want to receive confirmation I have registered, so that I check that my account was created successfully and that my email address was correctly entered.
+    * RESULT -
+
+4. As a User, I want to be able to reset my password, so that I can regain access to my account in case I forget my password.
+    * RESULT -
+
+5. As a User, I want to have a personalised profile page, so that I can view a history of my purchases.
+    * RESULT -
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### EPIC 2 Testing
+
+1. As a User, I want to view al list of products, so that I can select the item I want to purchase.
+    * RESULT -
+
+2. As a User, I want to be able to select an individual product, so that I can see the full details of that item including price, description and sizes if applicable.
+    * RESULT -
+
+3. As a User, I want to be able to sort the products by price, so that I can see products in my price range.
+    * RESULT -
+
+4. As a User, I want to be able to sort the products by category, so that I can filter to the type of product I am interested in.
+    * RESULT -
+
+5. As a User, I want to be able to search for a product by name or description, so that I find a specific product I am interested in.
+    * RESULT -
+
+6. As a User, I want to filter the search results by price or category, so that I can further narrow down my search to find the item I am interested in.
+    * RESULT -
+
+7. As a User, I want to be able to add items to a basket, so that I can add multiple items before having to checkout.
+    * RESULT -
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+
+#### EPIC 3 Testing
+
+1. As a User, I want to be able to see a list of my chosen products, so that I can confirm what I wish to purchase.
+    * RESULT -
+
+2. As a User, I want to be able to amend the size and quantity selected, so that I easily amend my order if I have made an error.
+    * RESULT -
+
+3. As a User, I want to be clearly shown the subtotal and shipping costs, so that I easily identify the total amount I have to pay.
+    * RESULT -
+
+4. As a User, I want to to be able to choose different billing and shipping addresses, so that I can have the item sent elsewhere if required.
+    * RESULT -
+
+5. As a User, I want to receive an email confirmation of my order, so that I can ensure that it was received by the vendor.
+    * RESULT -
+
+6. As a User, I want to be able to purchase an item with out creating an account, so that I do not have to have my details saved by the vendor.
+    * RESULT -
+
+7. As a User, I want to view an order success confirmation on screen, so that I can ensure my order was processed properly.
+    * RESULT -
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### EPIC 4 Testing
+
+1. As a Site Owner, I want to be notified when a new account is created, so that I am able to confirm if the account is legitimate or a bot or a duplicate account.
+    * RESULT -
+
+2. As a Site Owner, I want to be able to easily add new products, so that I am able to spend as little time as possible when updating the site.
+    * RESULT -
+
+3. As a Site Owner, I want to be able to easily update exisiting products, so that I can change descriptions, sizes or prices easily.
+    * RESULT -
+
+4. As a Site Owner, I want to be able to easily delete an exisiting product, so that I .can remove items that are no longer for sale.
+    * RESULT -
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### EPIC 5 Testing
+
+1. As a Site Owner, I want to be able to create blog posts, so that I can highlight any new products or events coming up.
+    * RESULT -
+
+2. As a Site Owner, I want to have users to be able to comment on my posts, so that I produce interaction and receive feedback from customers.
+    * RESULT -
+
+3. As a Site Owner, I want to give users ability to like posts, so that I can reaction to the product or post.
+    * RESULT -
+
+4. As a Site Owner, I want to have users create an acount before they can comment, so that I can moderate comments and stop anonymous commenting.
+    * RESULT -
+
+5. As a Site Owner, I want to display most recent blog posts on the homepage, so that I showcase news and new products without a user having to navigate to the blog page.
+    * RESULT -
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Marketing
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Deployment
+
+Local deployment was carried out using the Command Line Interface. to enable this the following steps were carried out:
+
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code editor (GitPod) using the clone link.
+3. Open the terminal within GitPod
+4. Enter "python3 manage.py runserver into the terminal.
+5. Go to local host address on my web browser.
+6. All locally saved changes will show up here.
+
+For the final deployment to Heroku, the following was carried out:
+
+1. Uncomment the PostgreSQL databse from settings.py file.
+2. Set debug = False in settings.py file.
+3. Commit and push all files to GitHub
+4. In Heroku, remove the DISABLE_COLLECTSTATIC config var.
+5. In the deploy tab, go to the manual deploy sections and click deploy branch.
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Credits
+
+
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
