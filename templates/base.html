@@ -39,8 +39,9 @@
 
     <header class="container-fluid fixed-top">
 
-      <div class="row" id="site-logo">
-        <div class="col-12 col-lg-4 my-auto oy-1 py-lg-0 text-center text-lg-left">
+      <div class="row" id="site-header">
+
+        <div id="site-logo" class="col-12 col-lg-4 my-auto oy-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
               <h2 class="logo-font text-black my-0">Island Flowers by Sarah</h2>
             </a>
@@ -70,7 +71,13 @@
            
         </div>
 
-        <div class="col-12 col-lg-4 my-auto oy-1 py-lg-0"></div>
+        <div id="account-bag" class="col-12 col-lg-4 my-auto oy-1 py-lg-0">
+          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <li class="list-inline-item dropdown">My Account</li>
+            <li class="list-inline-item">Shopping Bag</li>
+          </ul>
+          
+        </div>
       </div>
     </header>
 
