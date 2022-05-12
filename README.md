@@ -405,7 +405,7 @@ For the final deployment to Heroku, the following was carried out:
 
 ## Credits
 
-
+1. The code for the home page carousel was taken from the [Bootstrap documentation](https://getbootstrap.com/docs/4.0/components/carousel/) and amended for this project. I also used tutorials on [easyhtml5video.com](https://easyhtml5video.com/articles/bootstrap-carousel-image-680.html) to help in getting the images to display correctly.
 
 <br>
 
