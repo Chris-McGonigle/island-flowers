@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "name": "Classic” Bouquet",
+      "name": "Classic Bouquet",
       "description": "A beautiful handpicked selection of fresh flowers and foliage expertly arranged and presented presented in our signature gift wrap, perfect for those who enjoy arranging their own flowers as the stems are kept long.",
       "price": 35.99,
       "category": 1,
