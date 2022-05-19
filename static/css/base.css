@@ -54,6 +54,20 @@ body {
     border: 1px solid black !important;
 }
 
+/* Carousel Styling */
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    height: 500px;
+}
+
 /* Footer Styling */
 
 .text-small {
