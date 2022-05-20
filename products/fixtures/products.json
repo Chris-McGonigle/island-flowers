@@ -3,11 +3,11 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "name": "Classic Bouquet",
+      "name": "Classic” Bouquet",
       "description": "A beautiful handpicked selection of fresh flowers and foliage expertly arranged and presented presented in our signature gift wrap, perfect for those who enjoy arranging their own flowers as the stems are kept long.",
       "price": 35.99,
       "category": 1,
-      "image": "967980_81fe35c289ef41368e78065ef758c20d~mv2.jpg"
+      "image": "classic-bouquet.jpeg"
     }
   },
   {
@@ -18,7 +18,7 @@
       "description": "Break the rules! A modern twist on a traditional handtied bouquet, a beautiful handpicked selection of fresh flowers and foliage expertly arranged and presented in clear glass pickle jar. Our Pickle Jar Bouquets are individually crafted by one of our florists who will hand pick your flowers from the freshest seasonal selection we have stocked in our flower bar, each one with its one uniqueness. Put your trust in our florists to create you a florist choice bouquet from our fresh selection of flowers",
       "price": 49.99,
       "category": 1,
-      "image": "967980_71d9b1fa2ebd47c890c714e234224bd4~mv2.jpg"
+      "image": "pickle-jar.png"
     }
   },
   {
@@ -29,7 +29,7 @@
       "description": "Our most popular choice for an extra special gift, a beautiful handpicked selection of fresh flowers and foliage expertly arranged and presented in water in our large signature superior grey vase. As we are an independent creative florist, we rotate our flower selection and colour palette throughout the week, this is why we do not offer specific bouquet options, we prefer our customers to choose a bouquet style and our professionally trained florists will design you a bespoke creation. Put your trust in our florists to create you a florist choice bouquet from our fresh selection of flowers",
       "price": 69.99,
       "category": 1,
-      "image": "967980_c4b7a4a3d65b4a87839b2699e2f2d7e2~mv2.jpg"
+      "image": "superior-bouquet.png"
     }
   },
   {
@@ -40,7 +40,7 @@
       "description": "Our tropical terrarium is supplied planted with a beautiful mix of tropical & exotic plants, requiring minimum maintenance in a beautiful closed glass globe vessel. The terrarium has an removable top allowing easy access to the plants. Each plant is carefully handpicked by our expert team and are subject to seasonal variation. Finished with decorative sand, stones/pebbles and moss. The terrarium can sit on any flat surface and plant care instructions are included. Your Terrarium will be hand delivered and if this is a gift, a personalised gift card will also be included where applicable. Please check delivery information before placing your order. Please note that as plants are living items, they may vary from the images shown and variations in colour and shape should be expected. Please note that as plants are living items, they may vary from the images shown and variations in colour and shape should be expected.",
       "price": 159.99,
       "category": 2,
-      "image": "617af7_b060ca407522472c996e73f5c4aad0c6~mv2.jpg"
+      "image": "tropical-terrarium.jpeg"
     }
   },
   {
@@ -51,7 +51,7 @@
       "description": "Succulents are the perfect low maintenance plant for those kicking off their plant collection or have a busy lifestyle and often forget to water your plants. Comes in a concrete pot. Prefers bright light. Direct sunlight is ok but take care to ensure this does not scorch the plant. Allow the soil to dry out before watering. Do not over water.",
       "price": 9.99,
       "category": 2,
-      "image": "967980_fef153e4b07b48acb86324fac553904b~mv2.jpg"
+      "image": "potted-succulent.jpeg"
     }
   },
   {
@@ -62,7 +62,7 @@
       "description": "The Hoya Bella is a stunning flowering Hoya. Clusters of sweetly scented porcelain and candy pink flowers dangle on the end of long stems. Also known as the porcelain plant. Light: To encourage the formation of flower buds, try to position the plant where it will receive bright light - and even a little direct sun at either the beginning or end of the day. Water: Throughout the summer you should always keep the soil moist but not waterlogged.",
       "price": 27.99,
       "category": 2,
-      "image": "967980_85adc2109e264f4ebc65d98fa8189e30~mv2.jpg"
+      "image": "hoya-bella.jpeg"
     }
   },
   {
@@ -73,7 +73,7 @@
       "description": "Enjoy a bohemian twist on the safari trend with this botanical planter. Perfect for your favourite cactus or succulent, this indoor garden accessory is shaped as our Leo Lion and finished with a rustic glaze to embrace the natural aesthetic you'd find in the Mediterranean.",
       "price": 16.99,
       "category": 3,
-      "image": "967980_2ba740e4da4d43aaa1870dbdba05db38~mv2.jpg"
+      "image": "leo-lion-planter.jpeg"
     }
   },
   {
@@ -84,7 +84,7 @@
       "description": "Exploring decorative patterns and raw tones, this seagrass storage basket is characterised by natural texture and organic shapes with tribal influences and global inspiration from a variety of regions. In a neutral colourway palette of sand and black, this stylish storage solution will blend seamlessly into your home. Most importantly, it also serves a practical purpose! Great for decluttering those magazines, folding away those blankets, or tidying up those arts and crafts supplies.",
       "price": 24.99,
       "category": 3,
-      "image": "617af7_eb3d792a51c24c458819d5749ecb7610~mv2.jpg"
+      "image": "zig-zag-basket.jpeg"
     }
   },
   {
@@ -95,7 +95,7 @@
       "description": "A curiously innocent addition to your plant pal collection. Our little leggy planter features a pair of cute pondering eyes on a bohemian terracotta. Its character and charm are sure to create conversations and inspire a natural mood in your home. This product has been hand-finished with a whitewash to enhance the matte look, causing slight variations between each design.",
       "price": 4.99,
       "category": 3,
-      "image": "617af7_180df792c9494ba0839ecc4fa7be7bc2~mv2.jpg"
+      "image": "little-leggy-planter.jpeg"
     }
   },
   {
@@ -106,7 +106,7 @@
       "description": "Our Wreaths are individually crafted by one of our florist's who will hand pick your flowers from the freshest seasonal blooms and foliage we have stocked in our boutique to create a design in floral foam.",
       "price": 59.99,
       "category": 4,
-      "image": "967980_739c76258d1a41f8ada6510da779c2fb~mv2.jpg"
+      "image": "wreath.png"
     }
   },
   {
@@ -117,7 +117,7 @@
       "description": "This open heart arrangement is made fresh to order and available in various styles.",
       "price": 99.99,
       "category": 4,
-      "image": "967980_9ed24f77ccea4ca5992297082cd264f8~mv2_d_1200_1500_s_2.jpg"
+      "image": "open-heart.jpeg"
     }
   },
   {
@@ -128,7 +128,7 @@
       "description": "A traditional double ended coffin spray. Flowers and foliage are individually crafted by one of our florist's who will hand pick them from the freshest seasonal blooms we have stocked in our boutique to create a design arranged in floral foam to resemble a diamond shape. Our coffin sprays start at 4ft and will be created with the upmost love and care by our team of professional florists to create a fitting tribute to your loved one. Available in 4ft, 5ft & 6ft.",
       "price": 249.99,
       "category": 4,
-      "image": "967980_902bb4505dc3469187f2a4bca9fc013d~mv2.jpg"
+      "image": "coffin-spray.jpeg"
     }
   },
   {
@@ -139,7 +139,7 @@
       "description": "If you love plants and constantly say wtf this is the candle for you. Scent notes:Eucalyptus, Mint, Cypress, Pine, Moss, Fir. Size: 9oz Glass jar with lid. Wax: Coconut apricot wax blend candle.",
       "price": 14.99,
       "category": 5,
-      "image": "967980_2d577aab5c614732906cb47b4d831aaf~mv2.jpg"
+      "image": "funny-candle-fucculent.png"
     }
   },
   {
@@ -150,7 +150,7 @@
       "description": "For the plant lovers, what up succa! Scent notes: Agavae, Green Floral, Patchouli. Size: 9oz Glass jar with lid. Wax: Coconut apricot wax blend candle.",
       "price": 14.99,
       "category": 5,
-      "image": "967980_3d3ed9c32a8244199ae647d1331b4bd4~mv2.jpg"
+      "image": "funny-candle-succa.png"
     }
   },
   {
@@ -161,7 +161,7 @@
       "description": "For the biggest pot head you know! For all the plant lovers out there. Scent notes: Eucalyptus, Mint, Cypress, Pine, Moss, Fir. Size: 9oz Glass jar with lid. Wax: Coconut apricot wax blend candle",
       "price": 14.99,
       "category": 5,
-      "image": "967980_fb2a6c54a5784a28aa24dfd1efd6c9b2~mv2.jpg"
+      "image": "funny-candle-pot.jpeg"
     }
   },
   {
@@ -172,7 +172,7 @@
       "description": "Multi-Award-Winning chocolate with superb taste and texture, filled with a beautiful Strawberry & Champagne truffle. 100grms",
       "price": 6.49,
       "category": 6,
-      "image": "967980_a5d9f5b8e673482abae08bf4ef9d4688~mv2.jpg"
+      "image": "strawberry-truffles.jpeg"
     }
   },
   {
@@ -183,7 +183,7 @@
       "description": "Multi-Award-Winning chocolate with superb taste and texture, lots of bit with a whole hazelnut hidden in its centre, praline eneveloping it and finished with a smooth creamy milk chocolate shell – sensational!  Gluten Free. 110g",
       "price": 6.49,
       "category": 6,
-      "image": "967980_33fe66fd82204fbd8376a89cc933e3ed~mv2.jpg"
+      "image": "hazelnut-truffles.jpeg"
     }
   },
   {
@@ -194,7 +194,7 @@
       "description": "Artisan selection of Milk Chocolate Irish Creme Truffles. 110g",
       "price": 6.49,
       "category": 6,
-      "image": "967980_23419564dccf4b128f115351b2ce1d36~mv2.jpg"
+      "image": "creme-truffles.jpeg"
     }
   }
 ]
