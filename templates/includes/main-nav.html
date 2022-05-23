@@ -16,12 +16,12 @@
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="" class="dropdown-item">Flowers</a>
-                <a href="" class="dropdown-item">Plants & Terrariums</a>
-                <a href="" class="dropdown-item">Pots & Accessories</a>
-                <a href="" class="dropdown-item">Sympathy Flowers</a>
-                <a href="" class="dropdown-item">Candles</a>
-                <a href="" class="dropdown-item">Chocolate Treats</a>
+                <a href="{% url 'products' %}?category=flowers" class="dropdown-item">Flowers</a>
+                <a href="{% url 'products' %}?category=plants,terrariums" class="dropdown-item">Plants &amp; Terrariums</a>
+                <a href="{% url 'products' %}?category=pots,accessories" class="dropdown-item">Pots &amp; Accessories</a>
+                <a href="{% url 'products' %}?category=sympathy,flowers" class="dropdown-item">Sympathy Flowers</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
+                <a href="{% url 'products' %}?category=chocolate,treats" class="dropdown-item">Chocolate Treats</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
