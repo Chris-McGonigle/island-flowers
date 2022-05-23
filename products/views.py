@@ -14,7 +14,7 @@ def view_products(request):
 def single_product(request, product_id):
     """View to render an indvidual product page"""
 
-    products = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
     context = {
         'product': product,
     }
