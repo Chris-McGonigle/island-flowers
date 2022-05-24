@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
+
 def view_products(request):
     """View to render the products page"""
 
@@ -40,8 +41,8 @@ def view_products(request):
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
-
-    current_sorting = f'{sort}_{direction}'          
+            
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
@@ -59,4 +60,4 @@ def single_product(request, product_id):
     context = {
         'product': product,
     }
-    return render(request, 'products/product_detail.html', context)    
+    return render(request, 'products/product_detail.html', context)   
