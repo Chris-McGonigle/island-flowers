@@ -30,6 +30,8 @@
 
         <div class="col">
 
+            <!--Table to hold items added to bag-->
+
             {% if bag_items %}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
@@ -43,6 +45,8 @@
                             </tr>
                         </thead>
 
+                        <!--Items selected section-->
+
                         {% for item in bag_items %}
                             <tr>
                                 <td class="p-3 w-25">
@@ -55,7 +59,7 @@
                                     <p class="my-0">£{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form action="" method="POST" class="form update-form">
+                                    <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group input-group-{{ item.item_id }}">
@@ -90,6 +94,8 @@
                             </tr>
 
                         {% endfor %}
+
+                        <!--Grand Total and navigation buttons-->
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
                                 <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -115,6 +121,7 @@
 
                     </table>
                 </div>
+                <!--Customer warning message if bag is empty and navigation buttons-->
             {% else %}
                 <p class="lead mb-5">Your bag is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
