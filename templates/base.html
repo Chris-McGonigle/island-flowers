@@ -143,7 +143,11 @@
     </header>
 
     {% if messages %}
-        <div class="message-holder"></div>
+        <div class="message-holder">
+          {% for message in messages %}
+            {% include 'includes/toasts/toast_success.html' %}
+          {% endfor %}
+        </div>
     {% endif %}
 
     {% block page_header %}
