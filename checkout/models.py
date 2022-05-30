@@ -22,11 +22,15 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2,
                                       null=False, blank=False, default=0)
-                                      
+
     def _generate_order_number(self):
         """Method to generate a unique order number"""
         return uuid.uuid4().hex.upper()
 
+    def update_total(self):
+        """Updates total each time a line item is added"""
+        self.grand_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.save()
 
     def save(self, *args, **kwargs):
         """
@@ -36,7 +40,6 @@ class Order(models.Model):
         if not self.order_number:
             self.order_number = self._generate_order_number()
             super().save(*args, **kwargs)
-
 
 
 class OrderLineItem(models.Model):
