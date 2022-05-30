@@ -53,11 +53,15 @@ def remove_from_bag(request, item_id):
     """View to remove an item from the shopping bag"""
 
     try:
+        product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
         bag.pop(item_id)
+        messages.success(request, f'{product.name} has been removed from your bag')
+
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
+        messages.error(request, f'Error removing {e} from your bag')
         return HttpResponse(status=500)
