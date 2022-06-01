@@ -46,8 +46,7 @@ def checkout(request):
                         )
                         order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, ('One of your chosen products was not found in our database.' 'Please contact us for help')
-                    )
+                    messages.error(request, ('One of your chosen products was not found in our database.' 'Please contact us for help'))
                     order.delete()
                     return redirect(reverse('view_bag'))
 
@@ -87,22 +86,22 @@ def checkout(request):
     return render(request, template, context)
 
 
-    def checkout_success(request, order_number):
-        """
-        View to display a succesful checkout
-        """
-        save_info = request.session.get('save-info')
-        order = get_object_or_404(Order, order_number=order_number)
-        messages.success(request, f'Congratulations! Your order has been processed! \
-                         Your order number is {order_number}. You will receive a \
-                         confirmation email to {order.email}.')
+def checkout_success(request, order_number):
+    """
+    View to handle successful checkouts
+    """
+    save_info = request.session.get('save_info')
+    order = get_object_or_404(Order, order_number=order_number)
+    messages.success(request, f'Congratulations! Your order has been processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
 
-        if 'bag' in request.session:
-            del request.session['bag']
+    if 'bag' in request.session:
+        del request.session['bag']
 
-        template = 'checkout/checkout_success.html'
-        context = {
-            'order': order,
-        }
-        
-        return render(request, template, context)
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+    }
+
+    return render(request, template, context)
