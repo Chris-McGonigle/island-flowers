@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
-from .models import OrderLineItem
+from .models import OrderLineItem, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_contents
 
@@ -13,7 +13,7 @@ import stripe
 
 def checkout(request):
     """
-    Method to render out checkout form
+    Method to render out checkout form and submit to stripe and database
     """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -85,3 +85,24 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
+
+    def checkout_success(request, order_number):
+        """
+        View to display a succesful checkout
+        """
+        save_info = request.session.get('save-info')
+        order = get_object_or_404(Order, order_number=order_number)
+        messages.success(request, f'Congratulations! Your order has been processed! \
+                         Your order number is {order_number}. You will receive a \
+                         confirmation email to {order.email}.')
+
+        if 'bag' in request.session:
+            del request.session['bag']
+
+        template = 'checkout/checkout_success.html'
+        context = {
+            'order': order,
+        }
+        
+        return render(request, template, context)
