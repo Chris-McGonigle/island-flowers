@@ -56,7 +56,7 @@ class StripeWH_Handler:
                 order_exists = True
                 break
             except Order.DoesNotExist:
-                attempt =+ 1
+                attempt += 1
                 time.sleep(1)
         if order_exists:
             return HttpResponse(content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database', status=200)
@@ -90,7 +90,6 @@ class StripeWH_Handler:
                     order.delete()
                 return HttpResponse(content=f'Webhook received: {event["type"]} | ERROR: {e}', status=500)  
         return HttpResponse(content=f'Webhook received: {event["type"]} | SUCCESS: Created order in database', status=200)
-
 
     def handle_payment_intent_payment_failed(self, event):
         """Method to handle the payment intent failed webhook"""

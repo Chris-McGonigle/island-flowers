@@ -21,6 +21,7 @@ dill==0.3.4
 distlib==0.3.4
 Django==3.2
 django-allauth==0.41.0
+django-countries==7.2.1
 django-crispy-forms==1.14.0
 docutils==0.18.1
 entrypoints==0.4
@@ -104,6 +105,7 @@ soupsieve==2.3.1
 sqlparse==0.4.2
 stack-data==0.2.0
 stevedore==3.5.0
+stripe==3.2.0
 terminado==0.13.3
 testpath==0.6.0
 toml==0.10.2
