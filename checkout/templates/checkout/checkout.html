@@ -107,7 +107,7 @@
                     <div class="form-check form-check-inline float-right mr-0">
 
                         <!--User Sign In/Up and Save Delivery details inputs-->
-                        {% if user.is_authentictaed %}
+                        {% if user.is_authenticated %}
                             <label for="id-save-info" class="form-check-label">Save my delivery information for future orders</label>
                             <input type="checkbox" id='id-save-info' name='save-info' class="form-check-input ml-2 mr-0" checked>
                         {% else %}
