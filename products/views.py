@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+
 from .models import Product, Category
+from .forms import ProductForm
 
 
 def view_products(request):
@@ -57,7 +59,7 @@ def view_products(request):
     return render(request, 'products/products.html', context)
 
 
-def single_product(request, product_id):
+def product_detail(request, product_id):
     """View to render an indvidual product page"""
 
     product = get_object_or_404(Product, pk=product_id)
@@ -65,4 +67,16 @@ def single_product(request, product_id):
         'product': product,
     }
     
-    return render(request, 'products/product_detail.html', context)   
+    return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """View to add a product to the store"""
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+    
