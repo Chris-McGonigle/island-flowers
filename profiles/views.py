@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.contrin import messages
+from django.contrib import messages
 
 from .models import UserProfile
 from .forms import UserProfileForm
@@ -14,7 +14,7 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            message.success(request, 'Your updated details have been saved')
+            messages.success(request, 'Your updated details have been saved')
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
