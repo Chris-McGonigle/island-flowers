@@ -76,7 +76,7 @@ def add_product(request):
     """View to add a product to the store"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home')
+        return redirect(reverse('home'))
 
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
@@ -102,7 +102,7 @@ def edit_product(request, product_id):
     """Method to edit an exisiting store product"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home')
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     if request.method == "POST":
@@ -132,8 +132,8 @@ def delete_product(request, product_id):
     """Method to delete an existing store product"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home')
-        
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Successfully deleted product!')
