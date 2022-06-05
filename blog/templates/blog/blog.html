@@ -75,7 +75,7 @@
                         {% if request.user.is_superuser %}
                             <small>
                                 <a href="{% url 'edit_post' post.id %}">Edit Post</a> |
-                                <a href="" class="text-danger">Delete Post</a>
+                                <a href="{% url 'delete_post' post.id %}" class="text-danger">Delete Post</a>
                             </small>
                         {% endif %}
                     </div>

@@ -71,4 +71,14 @@ def edit_post(request, post_id):
     }
     return render(request, template, context)
 
+@login_required
+def delete_post(request, post_id):
+    """Method to delete an existing blog post"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, site owners only!')
+        return redirect(reverse('home'))
 
+    post = get_object_or_404(Post, pk=post_id)
+    post.delete()
+    messages.success(request, 'Successfully deleted post!')
+    return redirect(reverse('blog'))
