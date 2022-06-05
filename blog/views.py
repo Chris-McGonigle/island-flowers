@@ -16,7 +16,17 @@ def view_blog(request):
         'posts': posts
     }
 
-    return render(request, template, context )
+    return render(request, template, context)
+
+def post_detail(request, post_id):
+    """View to render an indvidual blog post page"""
+
+    post = get_object_or_404(Post, pk=post_id)
+    context = {
+        'post': post,
+    }
+    
+    return render(request, 'blog/post_detail.html', context)
 
 @login_required()
 def add_post(request):
