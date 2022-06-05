@@ -22,7 +22,7 @@
 
 {% if request.user.is_superuser %}
 <div class="row">
-    <a href="" class="btn btn-black rounded-0 my-2">
+    <a href="{% url 'add_post' %}" class="btn btn-black rounded-0 my-2">
         <span class="icon mr-2">
             <i class="fas fa-blog"></i>
         </span>
@@ -74,7 +74,7 @@
                     <div class="col">
                         {% if request.user.is_superuser %}
                             <small>
-                                <a href="">Edit Post</a> |
+                                <a href="{% url 'edit_post' post.id %}">Edit Post</a> |
                                 <a href="" class="text-danger">Delete Post</a>
                             </small>
                         {% endif %}
