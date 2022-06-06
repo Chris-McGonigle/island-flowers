@@ -96,3 +96,16 @@ def delete_post(request, post_id):
     post.delete()
     messages.success(request, 'Successfully deleted post!')
     return redirect(reverse('blog'))
+
+@login_required
+def delete_comment(request, comment_id):
+    """Method to delete an existing blog post comment"""
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if not request.user == comment.author:
+        messages.error(request, 'Sorry, only comment author can delete a comment!')
+        return redirect(reverse('home'))
+
+    comment.delete()
+    messages.success(request, 'Successfully deleted comment')
+    return redirect(reverse('blog'))

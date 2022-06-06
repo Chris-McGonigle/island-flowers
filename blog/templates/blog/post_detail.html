@@ -81,7 +81,7 @@
                         <hr class="w-50 mb-1">
                     </div>
 
-                    <div class="comment-">
+                    <div class="comment">
 
                         <div id="comment-input">
 
@@ -93,9 +93,11 @@
                                         <input class="comment-input" type="text" name="post-body" placeholder="Comment here.....">
                                     </form>
                                 </div>
-                
                             {% endif %}
 
+                        </div>    
+
+                        <div class="comment-wrapper">
                             {% for comment in post.comments.all %}
 
                                 <div id="comment-details">
@@ -110,20 +112,17 @@
                                         {{comment.body}}
                                     </div>
 
+                                </div>
+
                                 <div id="delete-comment">
-
                                     {% if request.user == comment.author %}
-                                    <a href="">Delete Comment</a>
-                                {% endif %}
+                                        <a href="{% url 'delete_comment' comment.id %}" class="text-danger">Delete Comment</a>
+                                    {% endif %}
+                                </div>
 
-                    </div>
+                                <hr>
 
-                    <hr>
-
-                
-                </div>
-
-            {% endfor %}
+                            {% endfor %}
                 
                         </div>
 
