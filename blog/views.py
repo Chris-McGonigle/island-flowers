@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Post
+from .models import Post, Comment
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
@@ -22,11 +22,15 @@ def post_detail(request, post_id):
     """View to render an indvidual blog post page"""
 
     post = get_object_or_404(Post, pk=post_id)
+    comments = Comment.objects.filter().order_by("-id")
+    
+    template = 'blog/post_detail.html'
     context = {
         'post': post,
+        'comments':comments
     }
     
-    return render(request, 'blog/post_detail.html', context)
+    return render(request, template, context)
 
 @login_required()
 def add_post(request):
