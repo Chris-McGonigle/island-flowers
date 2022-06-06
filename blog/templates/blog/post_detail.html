@@ -87,12 +87,23 @@
 
                             {% if request.user.is_authenticated %}
                 
-                                <div id="make-post">
-                                    <form method="POST" action="">
-                                        {% csrf_token %}
-                                        <input class="comment-input" type="text" name="post-body" placeholder="Comment here.....">
-                                    </form>
-                                </div>
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <div class="input-group w-100 mb-2">
+                    
+                                  <input class="form-control border border-black rounded-0"  id="comment_input" type="text" name="comment-input" placeholder="Enter your comment" aria-label="search-shop">
+                                  
+                                  <div class="input-group-append">
+                    
+                                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                      <span class="icon">
+                                        <i class="fab fa-telegram-plane"></i>
+                                      </span>
+                                    </button>
+                    
+                                  </div>
+                    
+                                </div>  
                             {% endif %}
 
                         </div>    

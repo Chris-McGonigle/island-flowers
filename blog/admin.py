@@ -19,7 +19,7 @@ class CommentAdmin(admin.ModelAdmin):
         'created',
     )
 
-    list_filter = ('post', 'created')
+    list_filter = ('author', 'created')
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Comment, CommentAdmin)
