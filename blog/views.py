@@ -3,7 +3,7 @@ from .models import Post, Comment
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
-from .forms import PostForm
+from .forms import PostForm, CommentForm
 
 
 def view_blog(request):
@@ -27,7 +27,8 @@ def post_detail(request, post_id):
     template = 'blog/post_detail.html'
     context = {
         'post': post,
-        'comments': comments
+        'comments': comments,
+        'comment_form': CommentForm(),
     }
     
     return render(request, template, context)
@@ -98,6 +99,34 @@ def delete_post(request, post_id):
     post.delete()
     messages.success(request, 'Successfully deleted post!')
     return redirect(reverse('blog'))
+
+@login_required
+def add_comment(request):
+    """Method to add comments to a blog post"""
+    post = get_object_or_404(Post, post_id)
+    comments = post.comments.all()
+
+    new_comment = None
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+    else:
+        comment_form = CommentForm()
+
+    template = 'blog/post_detail.html'
+    context = {
+        'post': post,
+        'comments': comments,
+        'new-comment': new_comment,
+        'comment_form': comment_form,
+    }    
+    
+    return render(request, template, context)    
+
 
 @login_required
 def delete_comment(request, comment_id):
