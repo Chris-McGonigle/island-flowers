@@ -27,7 +27,7 @@ def post_detail(request, post_id):
     template = 'blog/post_detail.html'
     context = {
         'post': post,
-        'comments':comments
+        'comments': comments
     }
     
     return render(request, template, context)
