@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
 from . models import Subscriber
+from .forms import SubscriberForm
 from django.contrib import messages
 
 def newsletter(request):
@@ -12,9 +13,9 @@ def newsletter(request):
             messages.success(request, 'Subscription Successful')
             return redirect('home')
     else:
-        form = SubscribersForm()
+        form = SubscriberForm()
     
-    template = ''
+    template = '/'
     context = {
         'form': form,
     }
