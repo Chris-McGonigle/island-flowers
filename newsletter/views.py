@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse, HttpResponseRedirect
 
 from .models import Subscriber
 from .forms import SubscriberForm
@@ -13,12 +14,14 @@ def newsletter(request):
     if form.is_valid():
         instance = form.save(commit=False)
         if Subscriber.objects.filter(email=instance.email).exists():
-            messages.error(request, 'Sorry, this email already exists in our database.\
+            messages.error(request, f'Sorry, {instance.email} already exists in our database.\
                            Please check and try again.')
         else:
             instance.save()
+            messages.success(request, f'Congratulations! {instance.email} has been added to our mailing list')
+            return redirect('home')
     
-    template = 'templates/includes/footer.html'
+    template = 'home/index.html'
     context = {
         'form': form,
     }
@@ -33,9 +36,9 @@ def unsubscribe(request):
         instance = form.save(commit=False)
         if Subscriber.objects.filter(email=instance.email).exists():
             Subscriber.objects.filter(email=instance.email).delete()
-            messages.success(request, '{instance.email} has been removed from our mailing list')
+            messages.success(request, f'{instance.email} has been removed from our mailing list')
         else:
-            messages.error(request, 'Sorry, this email cannot be found in our database.\
+            messages.error(request, f'Sorry, {instance.email} cannot be found in our database.\
                            Please check and try again.')
 
     template = 'unsubscribe.html'
