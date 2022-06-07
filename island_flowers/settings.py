@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'profiles',
     'blog',
     'newsletter',
-    'newsletter.apps.LetterConfig',
-
 ]
 
 MIDDLEWARE = [
