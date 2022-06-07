@@ -151,4 +151,5 @@ def delete_comment(request, comment_id):
 
     comment.delete()
     messages.success(request, 'Successfully deleted comment')
-    return redirect(reverse('blog'))
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
