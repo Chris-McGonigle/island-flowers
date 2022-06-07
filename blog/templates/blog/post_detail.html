@@ -85,7 +85,7 @@
 
                         <div id="comment-input">
 
-                            {% if request.user.is_authenticated %}
+                            {% if user.is_authenticated %}
                 
                             <form action="{% url 'add_comment' post.id %}" method="POST">
                                 {% csrf_token %}
@@ -95,12 +95,19 @@
                    
                                     <button class="form-control btn btn-black border border-black rounded-0" type="submit">Submit
                                     </button>
-                                </div>  
+                                </div>
+                            {% else %}
+                                <div class="col text-center mt-1">
+                                    <label for="id-save-info" class="form-check-label">
+                                        <a href="{% url 'account_signup' %}" class="text-info">Create an account</a> or
+                                        <a href="{% url 'account_login' %}" class="text-info">login</a> to make a comment.
+                                    </label>
+                                </div>
                             {% endif %}
 
                         </div>    
 
-                        <div class="comment-wrapper">
+                        <div class="comment-wrapper col mt-2">
                             {% for comment in post.comments.all %}
 
                                 <div id="comment-details">
