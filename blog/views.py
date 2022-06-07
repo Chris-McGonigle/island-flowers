@@ -23,15 +23,16 @@ def post_detail(request, post_id):
 
     post = get_object_or_404(Post, pk=post_id)
     comments = Comment.objects.filter().order_by("-id")
-    
+
     template = 'blog/post_detail.html'
     context = {
         'post': post,
         'comments': comments,
         'comment_form': CommentForm(),
     }
-    
+
     return render(request, template, context)
+
 
 @login_required()
 def add_post(request):
@@ -50,13 +51,14 @@ def add_post(request):
         else:
             messages.error(request, 'Failed to add product. Please \
                            check and try again.')
-    
+
     template = 'blog/add_post.html'
     context = {
         'form': form
     }
     return render(request, template, context)
-    
+
+
 @login_required
 def edit_post(request, post_id):
     """
@@ -88,6 +90,7 @@ def edit_post(request, post_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_post(request, post_id):
     """Method to delete an existing blog post"""
@@ -100,10 +103,11 @@ def delete_post(request, post_id):
     messages.success(request, 'Successfully deleted post!')
     return redirect(reverse('blog'))
 
+
 @login_required
-def add_comment(request):
+def add_comment(request, post_id):
     """Method to add comments to a blog post"""
-    post = get_object_or_404(Post, post_id)
+    post = get_object_or_404(Post, pk=post_id)
     comments = post.comments.all()
 
     new_comment = None
@@ -112,6 +116,7 @@ def add_comment(request):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             new_comment = comment_form.save(commit=False)
+            new_comment.author = request.user
             new_comment.post = post
             new_comment.save()
     else:
@@ -123,9 +128,9 @@ def add_comment(request):
         'comments': comments,
         'new-comment': new_comment,
         'comment_form': comment_form,
-    }    
-    
-    return render(request, template, context)    
+    }
+
+    return render(request, template, context)
 
 
 @login_required
