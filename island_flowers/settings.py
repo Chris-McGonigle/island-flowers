@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
     'blog',
+    'newsletter',
+    'newsletter.apps.LetterConfig',
+
 ]
 
 MIDDLEWARE = [
