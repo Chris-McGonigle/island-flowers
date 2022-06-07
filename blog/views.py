@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Post, Comment
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -119,6 +120,12 @@ def add_comment(request, post_id):
             new_comment.author = request.user
             new_comment.post = post
             new_comment.save()
+            messages.success(request, 'Comment successfully posted!')
+            return HttpResponseRedirect(request.META['HTTP_REFERER'])
+        else:
+            messages.error(request, 'Failed to post comment. Please \
+                           check and try again.')
+
     else:
         comment_form = CommentForm()
 
