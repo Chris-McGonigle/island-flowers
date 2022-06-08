@@ -156,6 +156,12 @@ input[name='q']::placeholder {
   overflow-y: auto;
 }
 
+/* Header Styling */
+
+.dropdown-menu {
+  background-color: #063549;
+}
+
 /* Carousel Styling */
 
 .carousel .carousel-item {
