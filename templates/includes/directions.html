@@ -1,15 +1,39 @@
-<div id="map-container" class="container">
+{% load easy_maps_tags %}
 
-    <div class="row">
-
-      <div class="col-12 col-md-6">
-        <p>Map Container</p>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <p>Directions Container</p>
-      </div>
-
+  <div class="row">
+    <div class="col text-center mt-3">
+        <h3 class="logo-font">About</h3>
+        <hr class="w-25 mb-1">
     </div>
-    
-</div>    
+  </div>
+
+  <div id="map-container" class="container w-100">
+
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <p>{% easy_map "Enniskillen" 500 500 %}</p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <br>
+          <div>
+            <p>Hi, I'm Sarah McQuaid, a studio Florist in Enniskillen. </p>
+            <p>I provide bespoke Floral designs for all occasions, using the freshest seasonal flowers and foliage in my flower studio on the Lough Shore Road, Enniskillen.</p>
+            <p> Delivery is available at no extra cost or feel free to collect at your convenience from our studio.</p>
+          </div>
+          <hr class="w-100">
+          <div>
+              <p>Our studio is located on the Lough Shore Road, Enniskillen.</p>
+              <p>1 mile past Portora on the A46, turn left signposted Lough Shore Manor.</p>
+              <p>Take the first right, then left and the studio is the last on the right.</p>
+              <p>We look forward to seeing you then!!</p>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+      
+  </div>

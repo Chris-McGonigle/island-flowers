@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
     height: 100%;
 }
@@ -6,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #fcffff;
     background-color: #063549;
+    font-family: 'Poppins', sans-serif;
 }
 
 hr {
@@ -187,6 +190,12 @@ input[name='q']::placeholder {
     top: 0;
     left: 0;
     height: 600px;
+}
+
+/* Map section styling */
+
+.directions {
+  background-color: #fcffff;
 }
 
 /* Footer Styling */
