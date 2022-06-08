@@ -198,14 +198,24 @@ input[name='q']::placeholder {
     height: 600px;
 }
 
-.shopbtn {
-
-}
-
 /* Map section styling */
 
 .directions {
   background-color: #fcffff;
+}
+
+/* Main Product Page styling */
+
+.card,
+.card-body,
+.card-footer {
+  background-color: #fcffff;
+}
+
+.card-body,
+.product-price,
+.product-edit-link {
+  color: #063549;
 }
 
 /* Footer Styling */
