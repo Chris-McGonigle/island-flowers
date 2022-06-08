@@ -2,17 +2,24 @@
     <div class="container py-4">
         <div class="row gy-4 gx-5">
             <div class="col-lg-4 col-md-6">
-                <h5 class="h1 text-white">FB.</h5>
-                <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Bootstrapious.com</a></p>
+                <h5 class="h1 text-white">Contact Us</h5>
+                <p class="small text-muted">Please feel free to contact us via any of the below methods.</p>
+                <p class="small text-muted"><i class="fas fa-phone"></i><a href="tel:+07704362043"> 07704 362 043</a></p>
+                <p class="small text-muted"><i class="fas fa-envelope"></i><a href="mailto:islandflowersflorist@gmail.com" target="_blank" rel="noopener"
+                    aria-label="Email Us"> islandflowersflorist@gmail.com</a></p>
+                <p class="small text-muted"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/islandflowersbysarah" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook Page (Opens in a new window)"> Find us on Facebook</a></p>
+                <p class="small text-muted"><i class="fab fa-instagram-square"></i><a href="https://www.instagram.com/islandflowersbysarah/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram Feed (Opens in a new window)"></a> Visit our Instagram feed</p>
+                <p class="small text-muted mb-0">&copy; Chris McGonigle 2021. All rights reserved. <a class="text-primary" href="https://github.com/Chris-McGonigle/island-flowers/"><i class="fab fa-github"></i> Github.com</a></p>
             </div>
             <div class="col-lg-2 col-md-6">
                 <h5 class="text-white mb-3">Quick links</h5>
                 <ul class="list-unstyled text-muted">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Get started</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'products' %}"">Products</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'profile' %}">My Profile</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">
