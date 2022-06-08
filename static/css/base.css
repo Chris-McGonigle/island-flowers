@@ -162,6 +162,14 @@ input[name='q']::placeholder {
   background-color: #063549;
 }
 
+.dropdown-item {
+  color: #fcffff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fcffff;
+}
+
 /* Carousel Styling */
 
 .carousel .carousel-item {
