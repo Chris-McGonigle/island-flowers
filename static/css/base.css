@@ -32,10 +32,16 @@ hr {
     width: fit-content;
 }
 
-.shop-now-button {
+.shopbtn {
     background: black;
-    color: white;
-    min-width: 260px;
+    color: #fcffff;
+    border: 1px solid #fcffff;
+    height: 50px;
+    min-width: 200px;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    z-index: 25;
 }
 
 .btn-black {
@@ -54,13 +60,13 @@ header,
   border: 1px solid black;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.shopbtn:hover,
+.shopbtn:active,
+.shopbtn:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #063549;
     color: white;
 }
 
@@ -190,6 +196,10 @@ input[name='q']::placeholder {
     top: 0;
     left: 0;
     height: 600px;
+}
+
+.shopbtn {
+
 }
 
 /* Map section styling */
