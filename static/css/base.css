@@ -172,8 +172,9 @@ input[name='q']::placeholder {
 
 /* Carousel Styling */
 
-.carousel .carousel-item {
-  height: 500px;
+.carousel,
+.carousel-item {
+  height: 600px;
 }
 
 .carousel-item img {
@@ -181,7 +182,7 @@ input[name='q']::placeholder {
     object-fit:cover;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 600px;
 }
 
 /* Footer Styling */
