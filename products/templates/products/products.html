@@ -72,7 +72,7 @@
 
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
 
-                            <div class="card h-100 border border-danger rounded shadow p-3">
+                            <div class="card h-100 card-border rounded">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid hover-zoom" src="{{ product.image.url }}" alt="{{ product.name }}">

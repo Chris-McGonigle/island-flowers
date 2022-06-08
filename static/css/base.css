@@ -218,6 +218,11 @@ input[name='q']::placeholder {
   color: #063549;
 }
 
+.card-border {
+  border: #c7becd 5px solid;
+
+}
+
 /* Footer Styling */
 
 .text-small {

@@ -10,7 +10,7 @@ def index(request):
     form = SubscriberForm()
 
     context = {
-        'posts':posts,
-        'form': form
+        'posts': posts,
+        'form': form,
     }
     return render(request, 'home/index.html', context)
