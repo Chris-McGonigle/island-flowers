@@ -37,11 +37,12 @@ def unsubscribe(request):
         if Subscriber.objects.filter(email=instance.email).exists():
             Subscriber.objects.filter(email=instance.email).delete()
             messages.success(request, f'{instance.email} has been removed from our mailing list')
+            return redirect('home')
         else:
             messages.error(request, f'Sorry, {instance.email} cannot be found in our database.\
                            Please check and try again.')
 
-    template = 'unsubscribe.html'
+    template = 'newsletter/unsubscribe.html'
     context = {
         'form': form,
     }
