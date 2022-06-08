@@ -345,6 +345,14 @@ color: #17a2b8; /* text-info */
     }
 }
 
+/* Extra padding for products page on xl screens */
+
+@media (min-width: 1320px) {
+  .header-container {
+      padding-top: 225px;
+  }
+}
+
 /* Extra padding for nav bar when collapsed */
 @media (max-width: 991px) {
   .header-container {
