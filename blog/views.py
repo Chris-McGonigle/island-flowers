@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from .forms import PostForm, CommentForm
+from newsletter.forms import SubscriberForm
 
 
 def view_blog(request):
@@ -12,9 +13,12 @@ def view_blog(request):
 
     posts = Post.objects.filter().order_by("-created_on")[:10]
 
+    sub_form = SubscriberForm()
+
     template = 'blog/blog.html'
     context = {
-        'posts': posts
+        'posts': posts,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
@@ -25,11 +29,14 @@ def post_detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     comments = Comment.objects.filter().order_by("-id")
 
+    sub_form = SubscriberForm()
+    
     template = 'blog/post_detail.html'
     context = {
         'post': post,
         'comments': comments,
         'comment_form': CommentForm(),
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
@@ -53,9 +60,12 @@ def add_post(request):
             messages.error(request, 'Failed to add product. Please \
                            check and try again.')
 
+    sub_form = SubscriberForm()
+    
     template = 'blog/add_post.html'
     context = {
-        'form': form
+        'form': form,
+        'sub_form': sub_form,
     }
     return render(request, template, context)
 
@@ -83,10 +93,13 @@ def edit_post(request, post_id):
         form = PostForm(instance=post)
         messages.info(request, f'You are editing {post.title}')
 
+    sub_form = SubscriberForm()
+    
     template = 'blog/edit_post.html'
     context = {
         'form': form,
         'post': post,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
@@ -129,12 +142,15 @@ def add_comment(request, post_id):
     else:
         comment_form = CommentForm()
 
+    sub_form = SubscriberForm()    
+
     template = 'blog/post_detail.html'
     context = {
         'post': post,
         'comments': comments,
         'new-comment': new_comment,
         'comment_form': comment_form,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)

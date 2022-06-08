@@ -7,10 +7,10 @@ def index(request):
 
     posts = Post.objects.filter().order_by("-id")[:3]
 
-    form = SubscriberForm()
+    sub_form = SubscriberForm()
 
     context = {
         'posts': posts,
-        'form': form,
+        'sub_form': sub_form,
     }
     return render(request, 'home/index.html', context)

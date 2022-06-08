@@ -39,7 +39,7 @@
                 <form action="{% url 'newsletter' %}" method="POST">
                     <div class="mb-3">
                         {% csrf_token %}
-                        {{ form|crispy }}
+                        {{ sub_form|crispy }}
                         <input type="submit" value="Submit" class="btn btn-primary">
                     </div>
                 </form>

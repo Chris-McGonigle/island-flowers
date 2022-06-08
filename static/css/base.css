@@ -47,6 +47,7 @@ hr {
 .btn-black {
     background: black;
     color: white;
+    border: 1px #fcffff solid;
 }
 
 header,
@@ -68,6 +69,11 @@ header,
 .btn-black:focus {
     background: #063549;
     color: white;
+}
+
+.search-btn {
+  background-color: #063549;
+  color: #fcffff;
 }
 
 .text-black {
@@ -218,8 +224,10 @@ input[name='q']::placeholder {
   color: #063549;
 }
 
-.card-border {
+.card-border,
+.image-container {
   border: #c7becd 5px solid;
+  border-radius: 0.25rem !important;
 
 }
 
@@ -240,8 +248,7 @@ input[name='q']::placeholder {
   }
   
   .form-control {
-    border-color: #545454;
-    color: #fcffff;
+    border: 3px solid #fcffff;
   }
   
   .form-control:focus,

@@ -13,7 +13,7 @@ def view_products(request):
     """View to render the products page"""
 
     products = Product.objects.all()
-    form = SubscriberForm()
+    sub_form = SubscriberForm()
     query = None
     categories = None
     sort = None
@@ -58,7 +58,7 @@ def view_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'form': form,
+        'sub_form': sub_form,
     }
     return render(request, 'products/products.html', context)
 
@@ -67,8 +67,11 @@ def product_detail(request, product_id):
     """View to render an indvidual product page"""
 
     product = get_object_or_404(Product, pk=product_id)
+    sub_form = SubscriberForm()
+
     context = {
         'product': product,
+        'sub_form': sub_form,
     }
     
     return render(request, 'products/product_detail.html', context)
@@ -93,9 +96,12 @@ def add_product(request):
     else:            
         form = ProductForm()
 
+    sub_form = SubscriberForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
@@ -121,10 +127,13 @@ def edit_product(request, product_id):
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
 
+    sub_form = SubscriberForm()
+
     template = 'products/edit_product.html'
     context = {
         'form': form,
         'product': product,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
