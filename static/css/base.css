@@ -4,7 +4,8 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    color: #555;
+    color: #fcffff;
+    background-color: #063549;
 }
 
 /* from Bulma */
@@ -35,6 +36,11 @@ body {
     color: white;
 }
 
+header,
+#main-nav {
+  background-color: #063549;
+}
+
 .btn-outline-black {
   background: white;
   color: black !important; /* use important to override link colors for <a> elements */
@@ -52,7 +58,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #fcffff !important;
 }
 
 .border-black {
@@ -181,16 +187,18 @@ input[name='q']::placeholder {
   }
   
   .form-control {
-    background: #212529;
     border-color: #545454;
+    color: #fcffff;
   }
   
-  .form-control:focus {
-    background: #212529;
+  .form-control:focus,
+  .form-control input {
+    background: #063549;
+    color: #fcffff;
   }
-  
+
   footer {
-    background: #212529;
+    background: #063549;
   }
   
   /* Allauth styling */
