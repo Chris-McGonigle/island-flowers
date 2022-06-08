@@ -69,14 +69,14 @@
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Latest Blog Posts</h2>
-            <hr class="w-50 mb-1">
+            <hr class="w-25 mb-1">
         </div>
     </div>
 
-    <div class="row justify-content-around">
+    <div class="row justify-content-around mt-4">
         {% for post in posts %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
-            {{ post.title }}
+            <h5 class="text-center"><a href="/blog/{{post.id}}">{{ post.title }}</a></h5>
             {% if post.image %}
             <a href="">
                 <img class="card-img-top img-fluid hover-zoom" src="{{ post.image.url }}" alt="{{ post.title }}">
@@ -86,8 +86,8 @@
                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
             </a>
             {% endif %}
-            {{ post.body }}
-            {{ post.created_on }}
+            <p class="mt-2">{{ post.body }}</p>
+            <p class="small text-muted">{{ post.created_on }}</p>
             <p><small><a href="/blog/{{post.id}}">Read more...</a></small></p>
         </div>
         {% endfor %}

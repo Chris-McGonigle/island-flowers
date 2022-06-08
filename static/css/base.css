@@ -8,6 +8,10 @@ body {
     background-color: #063549;
 }
 
+hr {
+  border: 1px solid #fcffff;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
