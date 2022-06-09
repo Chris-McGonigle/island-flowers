@@ -114,6 +114,7 @@ input[name='q']::placeholder {
   top: 72px;
   right: 15px;
   z-index: 9999;
+  color: #063549;
 }
 
 .custom-toast {
@@ -122,6 +123,14 @@ input[name='q']::placeholder {
 
 .toast-capper {
   height: 2px;
+}
+
+.text-info {
+  color: #cfb87f !important;
+}
+
+.text-info:hover {
+  color: #fcffff !important;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
