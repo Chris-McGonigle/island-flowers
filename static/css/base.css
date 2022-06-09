@@ -210,6 +210,10 @@ input[name='q']::placeholder {
   background-color: #fcffff;
 }
 
+.text-primary {
+  color: #cfb87f !important
+}
+
 /* Carousel Styling */
 
 .carousel,
