@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
 from .forms import UserProfileForm
+from newsletter.forms import SubscriberForm
 
 from checkout.models import Order
 
@@ -28,11 +29,13 @@ def profile(request):
         
     orders = profile.orders.all()
 
+    sub_form = SubscriberForm()
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
         'on_profile_page': True,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
