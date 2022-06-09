@@ -173,6 +173,3 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE__WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'islandflowersflorist@gmail.com'
 
-# Easy Maps Settings
-EASY_MAPS_GOOGLE_KEY = 'AIzaSyDUIwbT16CDwx7B4YttBU8zGb5W9TpO3N0'
-EASY_MAPS_CENTER = (54.3, -7.67)
