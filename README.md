@@ -407,6 +407,8 @@ For the final deployment to Heroku, the following was carried out:
 
 1. The code for the home page carousel was taken from the [Bootstrap documentation](https://getbootstrap.com/docs/4.0/components/carousel/) and amended for this project. I also used tutorials on [easyhtml5video.com](https://easyhtml5video.com/articles/bootstrap-carousel-image-680.html) to help in getting the images to display correctly.
 
+2. An article on [Open Classrooms](https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page) helped in how to use multiple crispy forms on one page.
+
 <br>
 
 [Back to top](#table-of-contents)
