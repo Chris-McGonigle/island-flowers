@@ -9,6 +9,7 @@ from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
+from newsletter.forms import SubscriberForm
 
 
 import stripe
@@ -120,11 +121,13 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing')
 
+    sub_form = SubscriberForm()
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
@@ -165,9 +168,11 @@ def checkout_success(request, order_number):
     if 'bag' in request.session:
         del request.session['bag']
 
+    sub_form = SubscriberForm()
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
+        'sub_form': sub_form,
     }
 
     return render(request, template, context)
