@@ -2,11 +2,18 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 
 from products.models import Product
+from newsletter.forms import SubscriberForm
 
 
 def view_bag(request):
     """View to render the shopping bag page"""
-    return render(request, 'bag/bag.html')
+    sub_form = SubscriberForm()
+
+    context = {
+        'sub_form': sub_form,
+    }
+
+    return render(request, 'bag/bag.html', context)
 
 
 def add_to_bag(request, item_id):
