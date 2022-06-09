@@ -55,6 +55,10 @@ header,
   background-color: #063549;
 }
 
+#site-header {
+  max-height: 150px;
+}
+
 .btn-outline-black {
   background: white;
   color: black !important; /* use important to override link colors for <a> elements */
