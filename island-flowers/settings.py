@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'island_flowers.urls'
+ROOT_URLCONF = 'island-flowers.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -106,7 +106,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'island_flowers.wsgi.application'
+WSGI_APPLICATION = 'island-flowers.wsgi.application'
 
 
 # Database
