@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 
 if os.path.exists("env.py"):
   import env
@@ -111,11 +112,15 @@ WSGI_APPLICATION = 'island_flowers.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse('postgres://sglmmikhrwdini:128d91222da75bca8e3cd9b092a6432bc0b0a705171ce71ed5d46545dcb8e715@ec2-54-228-32-29.eu-west-1.compute.amazonaws.com:5432/d84c3merbrj1ti')
 }
 
 
