@@ -2,6 +2,7 @@ from django.shortcuts import render
 from blog.models import Post
 from newsletter.forms import SubscriberForm
 
+
 def index(request):
     """View to render the home index page"""
 
@@ -10,12 +11,12 @@ def index(request):
     sub_form = SubscriberForm()
 
     context = {
-        'posts': posts,
-        'sub_form': sub_form,
+        "posts": posts,
+        "sub_form": sub_form,
     }
-    return render(request, 'home/index.html', context)
+    return render(request, "home/index.html", context)
 
 
 def error_404(request, exception):
     """View to handle 404 requests"""
-    return render(request, '404.html')
+    return render(request, "404.html")

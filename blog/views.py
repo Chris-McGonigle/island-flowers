@@ -15,13 +15,14 @@ def view_blog(request):
 
     sub_form = SubscriberForm()
 
-    template = 'blog/blog.html'
+    template = "blog/blog.html"
     context = {
-        'posts': posts,
-        'sub_form': sub_form,
+        "posts": posts,
+        "sub_form": sub_form,
     }
 
     return render(request, template, context)
+
 
 def post_detail(request, post_id):
     """View to render an indvidual blog post page"""
@@ -30,13 +31,13 @@ def post_detail(request, post_id):
     comments = Comment.objects.filter().order_by("-id")
 
     sub_form = SubscriberForm()
-    
-    template = 'blog/post_detail.html'
+
+    template = "blog/post_detail.html"
     context = {
-        'post': post,
-        'comments': comments,
-        'comment_form': CommentForm(),
-        'sub_form': sub_form,
+        "post": post,
+        "comments": comments,
+        "comment_form": CommentForm(),
+        "sub_form": sub_form,
     }
 
     return render(request, template, context)
@@ -46,26 +47,29 @@ def post_detail(request, post_id):
 def add_post(request):
     """View to add a blog post"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, site owners only!")
+        return redirect(reverse("home"))
 
     form = PostForm()
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added post!')
-            return redirect('blog')
+            messages.success(request, "Successfully added post!")
+            return redirect("blog")
         else:
-            messages.error(request, 'Failed to add product. Please \
-                           check and try again.')
+            messages.error(
+                request,
+                "Failed to add product. Please \
+                           check and try again.",
+            )
 
     sub_form = SubscriberForm()
-    
-    template = 'blog/add_post.html'
+
+    template = "blog/add_post.html"
     context = {
-        'form': form,
-        'sub_form': sub_form,
+        "form": form,
+        "sub_form": sub_form,
     }
     return render(request, template, context)
 
@@ -76,30 +80,33 @@ def edit_post(request, post_id):
     View to update existing post
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, site owners only!")
+        return redirect(reverse("home"))
 
     post = get_object_or_404(Post, pk=post_id)
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated post!')
-            return redirect(reverse('blog'))
+            messages.success(request, "Successfully updated post!")
+            return redirect(reverse("blog"))
         else:
-            messages.error(request, 'Failed to update post. Please \
-                           check and try again.')
+            messages.error(
+                request,
+                "Failed to update post. Please \
+                           check and try again.",
+            )
     else:
         form = PostForm(instance=post)
-        messages.info(request, f'You are editing {post.title}')
+        messages.info(request, f"You are editing {post.title}")
 
     sub_form = SubscriberForm()
-    
-    template = 'blog/edit_post.html'
+
+    template = "blog/edit_post.html"
     context = {
-        'form': form,
-        'post': post,
-        'sub_form': sub_form,
+        "form": form,
+        "post": post,
+        "sub_form": sub_form,
     }
 
     return render(request, template, context)
@@ -109,13 +116,13 @@ def edit_post(request, post_id):
 def delete_post(request, post_id):
     """Method to delete an existing blog post"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, site owners only!')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, site owners only!")
+        return redirect(reverse("home"))
 
     post = get_object_or_404(Post, pk=post_id)
     post.delete()
-    messages.success(request, 'Successfully deleted post!')
-    return redirect(reverse('blog'))
+    messages.success(request, "Successfully deleted post!")
+    return redirect(reverse("blog"))
 
 
 @login_required
@@ -126,31 +133,34 @@ def add_comment(request, post_id):
 
     new_comment = None
 
-    if request.method == 'POST':
+    if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             new_comment = comment_form.save(commit=False)
             new_comment.author = request.user
             new_comment.post = post
             new_comment.save()
-            messages.success(request, 'Comment successfully posted!')
-            return HttpResponseRedirect(request.META['HTTP_REFERER'])
+            messages.success(request, "Comment successfully posted!")
+            return HttpResponseRedirect(request.META["HTTP_REFERER"])
         else:
-            messages.error(request, 'Failed to post comment. Please \
-                           check and try again.')
+            messages.error(
+                request,
+                "Failed to post comment. Please \
+                           check and try again.",
+            )
 
     else:
         comment_form = CommentForm()
 
-    sub_form = SubscriberForm()    
+    sub_form = SubscriberForm()
 
-    template = 'blog/post_detail.html'
+    template = "blog/post_detail.html"
     context = {
-        'post': post,
-        'comments': comments,
-        'new-comment': new_comment,
-        'comment_form': comment_form,
-        'sub_form': sub_form,
+        "post": post,
+        "comments": comments,
+        "new-comment": new_comment,
+        "comment_form": comment_form,
+        "sub_form": sub_form,
     }
 
     return render(request, template, context)
@@ -162,10 +172,11 @@ def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
 
     if not request.user == comment.author:
-        messages.error(request, 'Sorry, only comment authors can delete a comment!')
-        return redirect(reverse('home'))
+        messages.error(
+            request, "Sorry, only comment authors can delete a comment!"
+        )
+        return redirect(reverse("home"))
 
     comment.delete()
-    messages.success(request, 'Successfully deleted comment')
-    return HttpResponseRedirect(request.META['HTTP_REFERER'])
-
+    messages.success(request, "Successfully deleted comment")
+    return HttpResponseRedirect(request.META["HTTP_REFERER"])
