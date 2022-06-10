@@ -409,6 +409,8 @@ For the final deployment to Heroku, the following was carried out:
 
 2. An article on [Open Classrooms](https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page) helped in how to use multiple crispy forms on one page.
 
+3. The site Privacy Policy was generated using [gdprprivacynotice.com](https://www.gdprprivacynotice.com)
+
 <br>
 
 [Back to top](#table-of-contents)
