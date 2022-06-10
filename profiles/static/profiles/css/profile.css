@@ -2,13 +2,16 @@
     color: #063549;
   }
 
-  #id_default_country,
-  #id_default_country option:not(:first-child) {
+   #id_default_country option:not(:first-child) {
       color: #fcffff;
   }
 
   #id_default_country option:first-child {
     color: #063549;
+}
+
+#id_default_country {
+  color: #063549;;
 }
 
 .form-control input {
