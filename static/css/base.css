@@ -416,7 +416,7 @@ color: #17a2b8; /* text-info */
   }
 }
 
-/* Smaller iframe on mobloe screens */
+/* Smaller iframe on mobile screens */
 
 @media (max-width: 500px){
   iframe {
