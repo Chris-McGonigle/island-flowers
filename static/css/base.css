@@ -260,6 +260,12 @@ input[name='q']::placeholder {
   color: #063549;
 }
 
+/* Blog Styling */
+
+.blog-add-btn {
+  text-align: center;
+}
+
 /* Footer Styling */
 
 .text-small {
