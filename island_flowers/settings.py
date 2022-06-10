@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-14e9njlgtqx)mi0-$7nf^@dqj4jb4-ymwndp6u)ith#%(ebc-n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['island-flowers.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -112,16 +112,17 @@ WSGI_APPLICATION = 'island_flowers.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://sglmmikhrwdini:128d91222da75bca8e3cd9b092a6432bc0b0a705171ce71ed5d46545dcb8e715@ec2-54-228-32-29.eu-west-1.compute.amazonaws.com:5432/d84c3merbrj1ti')
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:    
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation

@@ -1,0 +1,1 @@
+web: gunicorn island-flowers.wsgi:application
