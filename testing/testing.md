@@ -30,6 +30,11 @@ All HTML pages were passed through for testing via [W3C](https://validator.w3.or
 
 A total of 22 errors and warnings were received on the first pass through the W3C validator. 
 
+The <li> tag as child of a nav element errors were ignored as this was the same process as used in the project walkthrough videos.
+
+The duplicate id 'user-options' warning was ignored as the validator is picking up the mobile and desktop versions of the nav bar account dropdowns.
+
+The javascript type warnings were also ignored, again as the code matches that as shown by the instructor videos.
 
 
 <br>
