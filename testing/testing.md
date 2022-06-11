@@ -36,6 +36,17 @@ The duplicate id 'user-options' warning was ignored as the validator is picking 
 
 The javascript type warnings were also ignored, again as the code matches that as shown by the instructor videos.
 
+All other errors listed were addressed and on retest only the previously ignored warnings remain.
+
+2. [Products](/testing/images/products.png), [Blog](/testing/images/blog.png) and [Checkout Pages](/testing/images/checkout.png)
+
+Tests on all three pages returned the same errors that were ignored in the previous testing of the homepage. No other errors were returned so these pages were left as is.
+
+3. [Bag](/testing/images/bag-errors.jpg)
+
+Running the bag app through the validator returned two errors. one was an unclosed outer div element which was added.
+
+The body tag error seemed to be rendered by the base.html template. Code was checked against the wlakthrough project and seen to be the same so this error was ignored.
 
 <br>
 
