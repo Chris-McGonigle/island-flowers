@@ -214,6 +214,10 @@ input[name='q']::placeholder {
   color: #cfb87f !important
 }
 
+.navbar {
+  padding: 0.5rem, 0rem;
+}
+
 /* Carousel Styling */
 
 .carousel,
@@ -253,7 +257,16 @@ input[name='q']::placeholder {
 .image-container {
   border: #c7becd 5px solid;
   border-radius: 0.25rem !important;
+  background: #fcffff;
 
+}
+
+.image-container p {
+  color: #063549;
+}
+
+.image-container a:focus {
+  color: #cfb87f;
 }
 
 .card-footer {
