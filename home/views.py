@@ -15,8 +15,3 @@ def index(request):
         "sub_form": sub_form,
     }
     return render(request, "home/index.html", context)
-
-
-def error_404(request, exception):
-    """View to handle 404 requests"""
-    return render(request, "404.html")
