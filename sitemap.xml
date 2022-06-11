@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://island-flowers.herokuapp.com/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/bag/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=flowers</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=plants_terrariums</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=pots_accessories</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=sympathy_flowers</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=candles</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/?category=chocolate_treats</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/6/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/5/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/4/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/login/?next=/profile/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/newsletter/unsubscribe/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/9/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/18/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/17/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/16/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/5/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/13/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/15/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/14/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/7/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/8/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/6/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/1/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/2/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/10/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/3/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/11/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/4/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/products/12/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/3/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/2/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/blog/1/</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/signup/?next=%2Fprofile%2F</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://island-flowers.herokuapp.com/accounts/login/?next=%2Fprofile%2F</loc>
+  <lastmod>2022-06-11T15:40:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
