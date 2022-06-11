@@ -239,6 +239,10 @@ input[name='q']::placeholder {
   background-color: #fcffff;
 }
 
+.map {
+  align: center;
+}
+
 /* Main Product Page styling */
 
 .card,
