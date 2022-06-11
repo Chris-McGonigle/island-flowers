@@ -20,8 +20,8 @@ class CommentForm(ModelForm):
         self.helper = FormHelper(self)
         self.fields['body'].label = False
         self.helper.layout = Layout(
-            FIELD('body', rows='10'),
-            )
+            Field('body', rows='10'),
+        )
 
     class Meta:
         model = Comment
