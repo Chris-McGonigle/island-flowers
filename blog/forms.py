@@ -1,6 +1,5 @@
 from django.forms import ModelForm
 from .models import Post, Comment
-from crispy_forms.helper import FormHelper
 
 
 class PostForm(ModelForm):
@@ -15,13 +14,6 @@ class PostForm(ModelForm):
 
 class CommentForm(ModelForm):
     """Form to handle user comments"""
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.helper = FormHelper(self)
-        self.fields['body'].label = False
-        self.helper.layout = Layout(
-            Field('body', rows='10'),
-        )
 
     class Meta:
         model = Comment
