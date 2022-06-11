@@ -398,6 +398,10 @@ color: #17a2b8; /* text-info */
         z-index: 1030;
     }
 
+    .header-container {
+        padding-top: 164px;
+    }
+}
 
 
 /* Extra padding for nav bar when collapsed */
