@@ -99,6 +99,18 @@ The site was tested for accessibility, performance and best practise using Googl
 
 ### Javascript
 
+[JS Hint](https://jshint.com/) was used to to check for any errors within the JavaScript script files. 
+
+Stripe_elements.js in the checkout app retunred three warnings and no errors. The first two regarding template literal syntax was ignored, and the missing semicolon highlighted was added in.
+
+![stripe-elements.js](testing/images/stripe-elements.JPG)
+
+The js within quantity_input_script.html in the producst app returned three warnings and no errors. Again these warnings were template literal warnings and could be ignored.
+
+![quantity_input_script.html](testing/images/quantity-input.JPG)
+
+Countryfield.js within the profiles app retunred only two warnings. The first was ignored as it was highlighting the use of 'let' to set a variable. The unnecessary semicolon highlighted was removed.
+
 
 <br>
 
