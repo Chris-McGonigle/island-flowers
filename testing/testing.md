@@ -137,7 +137,7 @@ Code was then checked for errors via the terminal command "python3 -m flake8". T
 
 Other errors regarding unused imports were ignored as these did not alter the functionality of the site.
 
-Line too long errors were kept to an absolute minimum. On occasion such as in settinsg.py files, due to the importance of these files the warnings were ignored. Warnings were also ignored where splitting a f-string would change the onscreen rendering layout so these were also left as it, but as stated previous were kept to an absolute minumum.
+Line too long errors were kept to an absolute minimum. On occasion such as in settings.py files, due to the importance of these files, the warnings were ignored. Warnings were also ignored where splitting a f-string would change the onscreen rendering layout so these were also left as it, but as stated previous were kept to an absolute minumum.
 
 
 <br>
