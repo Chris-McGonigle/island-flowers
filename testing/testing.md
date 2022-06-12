@@ -11,6 +11,7 @@ During the construction process, the Dev Tools functionality of Chrome was used 
     * [CSS](#css)
     * [Lighthouse](#lighthouse)
     * [Javascript](#javascript)
+    * [Contrast Checker](#contrast-checker)
     * [Pep8](#pep8)
 2. [Manual testing](#manual-testing)
     * [Responsive testing](#responsive-testing)
@@ -87,9 +88,19 @@ The CSS was tested using [Jigsaw](https://jigsaw.w3.org/css-validator/).
 
 The site was tested for accessibility, performance and best practise using Google's [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool. The results were as follows:
 
+<br>
 
+[Back to top](#table-of-contents)
 
+<br>
 
+### Contrast Checker
+
+The background and foreground color were checked for contrast using the [WebAIM](https://webaim.org/resources/contrastchecker/) contrast checker tool.
+
+The main site colours of #063549 and #fcffff were fed into the tool and the contrast ratio passed with a score of 12.94:1
+
+![Contrast Checker](testing/images/contrast.JPG)
 
 <br>
 
