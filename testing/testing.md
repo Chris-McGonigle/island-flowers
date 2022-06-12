@@ -164,7 +164,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
  #### Element and journey testing
 
- All elements of the website were then manually tested to ensure they were working as expected, and expected customer journeys through the site with customer interaction points were also tested. These are detailed in the following table.
+ All elements of the website were then manually tested to ensure they were working as expected, and expected customer journeys through the site with customer interaction points were also tested. These are detailed in the following tables.
 
  ##### Navigation Bar
 
@@ -183,6 +183,12 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 | Mobile Nav Bar Search Icon | Clicking link opens search dropdown | Pass |
 | Back to top arrow | Clicking returns user to top of browser window | Pass |
 
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
 
 ##### Footer
 
@@ -197,6 +203,12 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 | Newsletter | Entering email and submitting returns confirmation message dependant on user state (new email, duplicate email) | Pass |
 | Newsletter Unsubscribe link | Clicking link opens Unsubscribe field in new window | Pass |
 
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
 ##### Home page
 
 | Page/Element | Expected Outcome | Pass/Fail |
@@ -207,6 +219,12 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 | Blog Image | Clicking link opens respective Blog page article | Pass |
 | Blog 'Read More' link | Clicking link opens respective Blog page article | Pass |
 
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
 ##### Products page
 
 | Page/Element | Expected Outcome | Pass/Fail |
@@ -216,9 +234,100 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 | Product card image | Clicking image opends individual product page | Pass |
 | Product card category | Clicking category filters products shown as per category selected | Pass |
 | Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit product page opens and confirmation message given | Pass |
-| Delete Link (superuser only) | Edit link only appears for superuser and when pressed product is deleted and user given confirmation message | Pass |
+| Delete Link (superuser only) | Delete link only appears for superuser and when pressed product is deleted and user given confirmation message | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
 
 ##### Individual Product page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Product Image | Clicking image opens image in a new tab | Pass |
+| Quantity Selectors | Up and down buttons change quantity amount | Pass |
+| Quantity Selectors minus disabled | Down buttons unhighlighted when selction at 1 | Fail |
+| Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit product page opens and confirmation message given | Pass |
+| Delete Link (superuser only) | Delete link only appears for superuser and when pressed product is deleted and user given confirmation message | Pass |
+| Keep Shopping Button | Clicking button returns user to main products page | Pass |
+| Add to bag Button | Clicking button adds item to bag, confirmation popup of shopping bag appears | Pass |
+| Add to bag button on quantity update | Clicking button adds adjust item count to bag, confirmation popup of shopping bag appears | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
+##### Product Management (Superuser Only)
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Add Product link in navigation | Clicking link opens add product page | Pass |
+| Cancel button | Clicking link returns user to products page | Pass |
+| Add product button | Clicking link adds product to store. User returned confirmation message, product appears in main product page | Pass |
+| Edit Product link on product cards | Clicking link opens edit product page with exsiting details prepopulated, confirmation message appears | Pass |
+| Cancel button | Clicking link returns user to products page | Pass |
+| Update product button | Clicking link adds product to store. User returned confirmation message, new product details appears in main product page | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
+##### Main Blog Page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Blog card image | Clicking image opens individual blog page | Pass |
+| Blog Read more link | Clicking image opens individual blog page | Pass |
+| Add Blog Post Button (superuser only) | Button only appears for superuser and when pressed add blog page opens and confirmation message given | Pass |
+| Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit blog page opens and confirmation message given | Pass |
+| Delete Link (superuser only) | Delete link only appears for superuser and when pressed blog post is deleted and user given confirmation message | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
+##### Individual Blog page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Blog Image | Clicking image opens image in a new tab | Pass |
+| Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit blog page opens and confirmation message given | Pass |
+| Delete Link (superuser only) | Delete link only appears for superuser and when pressed blog post is deleted and user given confirmation message | Pass |
+| Comment Box | Comment box only appears if signed in, otherwise user prompted to log in or sign up to comment | Pass |
+| Submit Button | Clicking button adds comment to blog post, confirmation popup appears | Pass |
+| Delete Comment (comment author only) | Delete comment only appears if user is original commenter | Pass |
+| Delete Comment (comment author only) | When pressed, comment is deleted and confirmation message appears | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
+
+##### Blog Management (Superuser Only)
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Add Blog link in navigation | Clicking link opens add blog page | Pass |
+| Cancel button | Clicking link returns user to blog page | Pass |
+| Add Post button | Clicking link adds blog to website. User returned confirmation message, blog appears in latest blog posts on homepage, and on main blog page | Pass |
+| Edit Post link | Clicking link opens edit post page with exsiting details prepopulated, confirmation message appears | Pass |
+| Cancel button | Clicking link returns user to blog post page | Pass |
+| Edit post button | Clicking link adds updated blog post product to website. User returned confirmation message, new blog details appears in main blog page and homepage if recent blog post | Pass |
+
+<br>
+
+[Back to element testing top](#element-and-journey-testing)
+
+<br>
 
 <br>
 
