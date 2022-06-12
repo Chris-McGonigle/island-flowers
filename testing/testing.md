@@ -26,7 +26,7 @@ To view testing images please click on each individual hyperlink. These files ca
 
 All HTML pages were passed through for testing via [W3C](https://validator.w3.org/) and the results are as follows:
 
-1. [Home page](/testing/images/home.png)
+1. [Homepage](/testing/images/home.png)
 
 A total of 22 errors and warnings were received on the first pass through the W3C validator. 
 
@@ -57,6 +57,16 @@ The body tag error seemed to be rendered by the base.html template. Code was che
 ### CSS
 
 The CSS was tested using [Jigsaw](https://jigsaw.w3.org/css-validator/).
+
+1. Homepage
+
+ ![Home CSS Errors](/testing/images/css-home.JPG)
+
+ CSS testing returned three errors. The first error was fixed by removing the superfluous comma operator.
+
+ Error two was fixed by changing the selector name from align to align-items.
+
+ Error three was fixed by removing the additional colon.
 
 
 <br>
