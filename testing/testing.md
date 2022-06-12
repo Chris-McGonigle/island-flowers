@@ -68,6 +68,14 @@ The CSS was tested using [Jigsaw](https://jigsaw.w3.org/css-validator/).
 
  Error three was fixed by removing the additional colon.
 
+ The 697 warninsg received were all ignored apart from line 363 where the background-color and border has been set to the same color, so the border field was removed. All other warnings related to vendor extensions and pseudo-elements were also ignored.
+
+ The page was retested and all errors were cleared.
+
+ 2. [Products](/testing/images/css-products.JPG), [Blog](/testing/images/css-blog.JPG), [Profile](/testing/images/css-profile.JPG), [Bag](/testing/images/css-bag.JPG) and [Checkout Pages](/testing/images/css-checkout.JPG)
+
+ Tests on the remaining pages threw no errors at all, and the same warnings that were generated for the homepage, so these were also ignored.
+
 
 <br>
 
