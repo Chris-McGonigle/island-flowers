@@ -15,7 +15,7 @@ During the construction process, the Dev Tools functionality of Chrome was used 
     * [Pep8](#pep8)
 2. [Manual testing](#manual-testing)
     * [Responsive testing](#responsive-testing)
-    * [Element testing](#element-testing)
+    * [Element & Journey testing](#element-and-journey-testing)
 
 
 
@@ -31,7 +31,7 @@ All HTML pages were passed through for testing via [W3C](https://validator.w3.or
 
 A total of 22 errors and warnings were received on the first pass through the W3C validator. 
 
-The <li> tag as child of a nav element errors were ignored as this was the same process as used in the project walkthrough videos.
+The 'li' tag as child of a nav element errors were ignored as this was the same process as used in the project walkthrough videos.
 
 The duplicate id 'user-options' warning was ignored as the validator is picking up the mobile and desktop versions of the nav bar account dropdowns, again matching the style as per the walkthrough videos.
 
@@ -100,7 +100,7 @@ The background and foreground color were checked for contrast using the [WebAIM]
 
 The main site colours of #063549 and #fcffff were fed into the tool and the contrast ratio passed with a score of 12.94:1
 
-![Contrast Checker](testing/images/contrast.JPG)
+![Contrast Checker](/testing/images/contrast.JPG)
 
 <br>
 
@@ -114,11 +114,11 @@ The main site colours of #063549 and #fcffff were fed into the tool and the cont
 
 Stripe_elements.js in the checkout app retunred three warnings and no errors. The first two regarding template literal syntax was ignored, and the missing semicolon highlighted was added in.
 
-![stripe-elements.js](testing/images/stripe-elements.JPG)
+![stripe-elements.js](/testing/images/stripe-elements.JPG)
 
 The js within quantity_input_script.html in the producst app returned three warnings and no errors. Again these warnings were template literal warnings and could be ignored.
 
-![quantity_input_script.html](testing/images/quantity-input.JPG)
+![quantity_input_script.html](/testing/images/quantity-input.JPG)
 
 Countryfield.js within the profiles app retunred only two warnings. The first was ignored as it was highlighting the use of 'let' to set a variable. The unnecessary semicolon highlighted was removed.
 
@@ -162,12 +162,63 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 <br>
 
 
- #### Element testing
+ #### Element and journey testing
 
- All elements were tested for functionailty and were found to have passed as expected. The below screeshot details the tests carried out and is also available as an [excel spreadsheet](/testing/manual-testing.xlsx).
+ All elements of the website were then manually tested to ensure they were working as expected, and expected customer journeys through the site with customer interaction points were also tested. These are detailed in the following table.
 
- ![Manual Testing Results](/testing/images/manual-testing.jpg)
+ ##### Navigation Bar
 
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Site Logo | Clicking site logo returns user to homepage | Pass|
+| All products link | Clicking link shows product dropdown | Pass |
+| Categories link | Clicking link shows categories dropdown | Pass |
+| Blog link | Clicking link redirects to blog page | Pass |
+| My Account link - User logged out | Clicking link shows account register and login | Pass |
+| My Account link - User logged in | Clicking link profile and log out links | Pass |
+| My Account link - SuperUser logged in | Clicking link add product, add blog, profile and logout links | Pass |
+| Shopping Bag link | Clicking link redirects to shopping bag | Pass |
+| Mobile Nav Bar | Mobile nav appears on screens below 992px wide | Pass |
+| Mobile Nav Bar Toggle | Clicking link opens navigation dropdown | Pass |
+| Mobile Nav Bar Search Icon | Clicking link opens search dropdown | Pass |
+| Back to top arrow | Clicking returns user to top of browser window | Pass |
+
+
+##### Footer
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Contact Us Links - Social Sites | Clicking links opens each site in new window  | Pass|
+| Contact Us Links - Telephone | Clicking link opens dialling window (mobile) | Pass |
+| Contact Us Links - Email | Clicking link opens mail editor window | Pass|
+| Quick Links - Internal site links | Clicking link opens site page in original window | Pass|
+| Quick Links - My profile link | Clicking link directs user to sign up/in page if not logged in | Pass |
+| Privacy Policy | Clicking link opens privacy policy in new window | Pass |
+| Newsletter | Entering email and submitting returns confirmation message dependant on user state (new email, duplicate email) | Pass |
+| Newsletter Unsubscribe link | Clicking link opens Unsubscribe field in new window | Pass |
+
+##### Home page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Carousel | Images scroll as expected, navigation arrows cycle through images | Pass |
+| Shop Now Button | Clicking link opens Products page | Pass |
+| Blog Posts Heading | Clicking link opens Blog page | Pass |
+| Blog Image | Clicking link opens respective Blog page article | Pass |
+| Blog 'Read More' link | Clicking link opens respective Blog page article | Pass |
+
+##### Products page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| List filter | Products return correct items only dependant on filter option selected | Pass |
+| Product count | Counter shows correct number of items on screen at time dependant on filter selected | Pass |
+| Product card image | Clicking image opends individual product page | Pass |
+| Product card category | Clicking category filters products shown as per category selected | Pass |
+| Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit product page opens and confirmation message given | Pass |
+| Delete Link (superuser only) | Edit link only appears for superuser and when pressed product is deleted and user given confirmation message | Pass |
+
+##### Individual Product page
 
 <br>
 

@@ -9,7 +9,7 @@ PREAMBLE GOES HERE
 
 
 
-You can view a live version of the [website]
+You can view a live version of the [website](https://island-flowers.herokuapp.com/)
 
 ## Table of Contents
 
@@ -407,9 +407,23 @@ For the final deployment to Heroku, the following was carried out:
 
 1. The code for the home page carousel was taken from the [Bootstrap documentation](https://getbootstrap.com/docs/4.0/components/carousel/) and amended for this project. I also used tutorials on [easyhtml5video.com](https://easyhtml5video.com/articles/bootstrap-carousel-image-680.html) to help in getting the images to display correctly.
 
-2. An article on [Open Classrooms](https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page) helped in how to use multiple crispy forms on one page.
+2. The ecommerce portion of the website was adapted from the Code Institute 'Boutique Ado' walkthrough project.
 
-3. The site Privacy Policy was generated using [gdprprivacynotice.com](https://www.gdprprivacynotice.com)
+3. Tutorials from [Code with Stein](https://www.youtube.com/playlist?list=PLpyspNLjzwBkvj8eSmGcQLC50k55NXWRP) and [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) assisted in the production of the blog pages.
+
+4. Tutorials from [KenBrotech](https://www.youtube.com/watch?v=hWtlskOaFNI) and [Master Code Online](https://www.youtube.com/watch?v=TBVsILIt4HM) assisted in the creation of the newsletter app.
+
+5. An article on [Open Classrooms](https://openclassrooms.com/en/courses/7107341-intermediate-django/7264795-include-multiple-forms-on-a-page) helped in how to use multiple crispy forms on one page.
+
+6. The site Privacy Policy was generated using [gdprprivacynotice.com](https://www.gdprprivacynotice.com).
+
+7. The site favicon was created on [favicon.io](https://favicon.io/favicon-converter/).
+
+8. Product images and text were taken from the [Memento Floral Design](https://www.mementofloraldesign.com/) website.
+
+9. Images and text for the blog post were sourced from the clients existing Facebook page.
+
+10. The site logo was provided by the client.
 
 <br>
 
