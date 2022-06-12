@@ -18,8 +18,8 @@ def newsletter(request):
                 request,
                 f"Sorry, {instance.email} already exists in our database.\
                            Please check and try again.",
-            return redirect("home")               
             )
+            return redirect("home")
         else:
             instance.save()
             messages.success(
