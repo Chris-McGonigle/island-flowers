@@ -89,6 +89,8 @@ The site was tested for accessibility, performance and best practise using Googl
 
 
 
+
+
 <br>
 
 [Back to top](#table-of-contents)
@@ -106,6 +108,14 @@ The site was tested for accessibility, performance and best practise using Googl
 
 ### Pep8
 
+To check against Pep8 standards, all apps were first passed through the [Black](https://pypi.org/project/black/) code formatting tool to correct any formatting issues.
+
+Code was then checked for errors via the terminal command "python3 -m flake8". This returned a number of whitespace and indentation errors which were rectified where possible. (The unfixed errors were situated in root files such as .vscode/artictern)
+
+Other errors regarding unused imports were ignored as these did not alter the functionality of the site.
+
+Line too long errors were kept to an absolute minimum. On occasion such as in settinsg.py files, due to the importance of these files the warnings were ignored. Warnings were also ignored where splitting a f-string would change the onscreen rendering layout so these were also left as it, but as stated previous were kept to an absolute minumum.
+
 
 <br>
 
@@ -117,7 +127,7 @@ The site was tested for accessibility, performance and best practise using Googl
 
  #### Responsive testing
 
- The site was tested extensively using the dev tools facilties of Chrome, Safari and Firefox. It was tested against most popular makes of phones and tablets. 
+ The site was tested extensively using the dev tools facilties of Chrome, Safari and Firefox. It was tested against most popular makes of phones and tablets, as well as varying desptop screen resolutions. 
 
  It was found to be responsive across all tested platforms.
 
