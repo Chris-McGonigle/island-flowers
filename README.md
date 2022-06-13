@@ -378,9 +378,9 @@ The following data models were used in the production of this website:
 
 The navigation bar contains a number of features vital to the smooth journey of a site visitor.
 
-The navbar conatins the site logo, which also doubles a site wide link back to the homepage. A serach bar is also present, which will search by name and/or description. 
+The navbar conatins the site logo, which also doubles a site wide link back to the homepage. A search bar is also present, which will search by name and/or description. 
 
-Next is the account sign in icon. This will change depending on wether the user is a superuser or not. 
+Next is the account sign in icon. This will change depending on whether the user is a superuser or not. 
 
 Finally, the bag icon contains a running subtotal of items added to it. It also serves as the link to open the site shopping bag page, and finally, toast warning messages appear in the section to convey information and confirmation to the user through out any tasks carried out, such as email sign up.
 
@@ -397,6 +397,61 @@ Finally, the bag icon contains a running subtotal of items added to it. It also 
 ##### Toast Message
 
 ![Toast message](/readme-images/toast.JPG)
+
+#### Nav Links
+
+Under the nav bar are three further navigation links. The first, Products, allows a user to filter all products by price or category. The category link allows the user to filter at category, and finally, the blog link directs the user to the main blog page.
+
+![Nav links](/readme-images/nav-links.JPG)
+
+### Image Carousel and Home button
+
+The image carousel on the homepage serves two purposes. First it displays an example of the products on offer, and second it holds the button to direct the user to the main products page.
+
+![Carousel](/readme-images/carousel.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Latest Blog Posts
+
+The blog posts section renders out the last three blog posts made to the site and display them to the user with a short description and the time created. A user can navigate to the blog post by clicking on the post image, or via the 'Read more...' link.
+
+![Latest Blog](/readme-images/latest-blog.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### About section
+
+The about section gives a little personal info about the client, and then gives text directions to the clients studio. A interactive Google map is also included here, with a marker set at the studio, to assist site users if they shold require to visit the client.
+
+![About](/readme-images/about.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Footer
+
+The site footer houses a number of very important features.
+First of all, the owner contact details such as emal, phone, and social media channels are all contained here. Each link is clickable and opens in a new window.
+
+The footer also displays the site opening hours, and also contains a quick links section to the site, with links similar to the nav bar, apart fro the nclusion of the Privacy Policy. the privacy policy is hosted by a third party and opens in a new window.
+
+Finally, the newsletter sign up field is held in the footer. Users can enter their email to sign up to receive a newsletter. A link to unsubscribe from the newsletter is also included.
+
+![Footer](/readme-images/footer.JPG)
+
+A Back to top button also in the bottom right of the user viewport. Users can use this to navigate quicly to the top of the screen.
 
 <br>
 
