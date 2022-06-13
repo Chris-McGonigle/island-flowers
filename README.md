@@ -8,12 +8,12 @@ Up until this point the client had been relying on word of mouth, Facebook and I
 
 After a succesful launch, the client now wants to build on ther business, ad seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated website.
 
-![Desktop View]()
+## Desktop
+![Desktop View](/readme-images/desktop.png)
 
-![Mobile View]()
+## Mobile
 
-
-
+![Mobile View](/readme-images/mobile.png)
 
 You can view a live version of the [website](https://island-flowers.herokuapp.com/)
 
@@ -166,7 +166,7 @@ EPICS were defined as User Accounts, Shop Browsing, Checkout & Bag, Site Admin a
 
 Must Have User stories were prioritised for completion first, and these were all implemented by project end. Once completed, tasks were moved to the Done pile. 
 
-You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowers/projects/1?fullscreen=true) to see the project progress. Unfinished tasks would be aimed to be completed in future iterations.
+You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowers/projects/1?fullscreen=true) to see the project progress. Three tasks remain outstanding at this time. It would be invisaged that these tasks would be completed in future iterations.
 
 <br>
 
@@ -176,8 +176,131 @@ You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowe
 
 ## Data Models
 
+The following data models were used in the production of this website:
+
+### Products App
+
+#### Category Model
+
+| Key | Name | Type |
+|---|---|---|
+| pk | name | CharField |
+|  | friendly_name | CharField |
+
+#### Product Model
+
+| Key | Name | Type |
+|---|---|---|
+| pk | name | CharField |
+| fk | category | Category Model |
+|  | SKU | CharField |
+|  | description | TextField |
+|  | price | DecimalField |
+|  | image | ImageField |
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Checkout App
+
+#### Order Model
+
+| Key | Name | Type |
+|---|---|---|
+| pk | order_number | CharField |
+| fk | user_profile | UserProfile Model |
+|  | full_name | CharField |
+|  | email | EmailField |
+|  | phone_number | CharField |
+|  | country | CountryField |
+|  | postcode | CharField |
+|  | town_or_city | CharField |
+|  | street_address1 | CharField |
+|  | street_address2 | CharField |
+|  | county | CharField |
+|  | date | DateTimeField |
+|  | delivery_cost | DecimalField |
+|  | order_total | DecimalField |
+|  | grand_total | DecimalField |
+|  | original_bag | TextField  |
+|  | stripe_pid | Charfield |
+
+#### OrderLineItem Model
+
+| Key | Name | Type |
+|---|---|---|
+| fk | order | Order Model |
+| fk | product | Product Model |
+|  | quantity | IntegerField |
+| | lineitem_total | DecimalField |
 
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Profiles App
+
+#### UserProfile Model
+
+| Key | Name | Type |
+|---|---|---|
+| fk | user | User Model |
+|  | default_phone_number | CharField |
+|  | default_street_address1 | CharField |
+|  | default_street_address2 | CharField |
+|  | default_town_or_city | CharField |
+|  | default_county | CharField |
+|  | default_postcode | CharField |
+|  | default_country | CountryField |
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Blog App
+
+#### Post Model
+
+| Key | Name | Type |
+|---|---|---|
+| fk | author | User Model |
+| fk | category | Category Model |
+|  | title | CharField |
+|  | body | TextField |
+|  | image | ImageField |
+|  | created_on | DateTimeField
+
+#### Comment Model
+
+| Key | Name | Type |
+|---|---|---|
+| fk | author | User Model |
+| fk | post | Post Model |
+|  | body | TextField |
+|  | created | DateTimeField
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Newsletter App
+
+#### Subscriber Model
+
+| Key | Name | Type |
+|---|---|---|
+| pk | email | EmailField |
+|  | date_added | DateTimeField |
 
 <br>
 
