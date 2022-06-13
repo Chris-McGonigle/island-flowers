@@ -262,6 +262,7 @@ input[name='q']::placeholder {
   border: #c7becd 5px solid;
   border-radius: 0.25rem !important;
   background: #fcffff;
+  margin: 10px;
 
 }
 
@@ -401,6 +402,13 @@ color: #17a2b8; /* text-info */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
+  }
+}
+
+/* Extra margin on blog post section on mobile devices */
+@media (max-width: 575px) {
+  .image-container {
+    margin: 30px;
   }
 }
 
