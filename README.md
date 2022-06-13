@@ -41,9 +41,10 @@ You can view a live version of the [website](https://island-flowers.herokuapp.co
         * [EPIC 3 Testing](#epic-3-testing)
         * [EPIC 4 Testing](#epic-4-testing)
         * [EPIC 5 Testing](#epic-5-testing)
-6. [Marketing](#marketing)        
-7. [Deployment](#deployment)
-8. [Credits](#credits)
+6. [Search Engine Optimisation](#search-engine-optimisation)
+7. [Marketing](#marketing)        
+8. [Deployment](#deployment)
+9. [Credits](#credits)
 
 
 ## Site Design Considerations
@@ -364,7 +365,23 @@ A dedicated testing section covering validator and manual testing can be found i
 
 ### Bugs
 
+During the course of development, a number of bugs were found that are detailed below. 
 
+#### Order total not showing on Checkout Success
+
+On checkout success, it was discovered that the Order total was not being displayed to the user, despite the line items showing correctly on the order, and the shopping bag icon showing the correct amount. Checking stripe also showed the correct amount for the order being charged.
+
+This item was rectified by amending an indent in the orderlineitem totals function in the checkout app. Removing the indent brought the save call out of the function and order totals then worked correctly.
+
+#### Webhook errors
+
+After initial setup, stripe webhooks were failing. Stripe still received the order perfectly, but in the event of a system crash during ordering or similar, the webhook to create the order in the database was not happening, so theoretically, a user could place an order but the store never received it in the django database.
+
+After investigation, it was discoverd an extra underscore when setting the webhook signing handshake variable in settings.py. With this underscore removed, webhooks were now being sucessfully received, and where necessary, these webhooks can now create orders in the database.
+
+#### Quantity Selector error
+
+As outlined in project walkthroughs, an error on larger devices results in the expected outcome of the minus quantity buttn being blanked out when the quantity selector is at zero. I was unable to rectify this within the timescale, but as it does not effect the functionality of the site, this was deemed to be acceptable at this time. It is something I would look to fix in future iterations.
 
 <br>
 
@@ -492,6 +509,14 @@ A dedicated testing section covering validator and manual testing can be found i
 
 5. As a Site Owner, I want to display most recent blog posts on the homepage, so that I showcase news and new products without a user having to navigate to the blog page.
     * RESULT - TEST PASSED
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+## Search Engine Optimisation
 
 <br>
 
