@@ -1,6 +1,12 @@
 # Island Flowers by Sarah
 
-PREAMBLE GOES HERE
+Island Flowers by Sarah is a sole trader floristry business based in Enniskillen, County Fermanagh, Northern Ireland.
+
+After losing her role as a childcare social worker during the pandemic, the client set about turning her flower arranging hobby into a viable business.
+
+Up until this point the client had been relying on word of mouth, Facebook and Instagram to drive business leads. 
+
+After a succesful launch, the client now wants to build on ther business, ad seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated website.
 
 ![Desktop View]()
 
