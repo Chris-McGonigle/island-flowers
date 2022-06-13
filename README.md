@@ -8,6 +8,8 @@ Up until this point the client has been relying on word of mouth, Facebook and I
 
 After a succesful launch, the client now wants to build on her business, and seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated web presence.
 
+You can view a live version of the [website](https://island-flowers.herokuapp.com/)
+
 ## Desktop
 ![Desktop View](/readme-images/desktop.png)
 
@@ -15,12 +17,9 @@ After a succesful launch, the client now wants to build on her business, and see
 
 ![Mobile View](/readme-images/mobile.png)
 
-You can view a live version of the [website](https://island-flowers.herokuapp.com/)
-
 ## Table of Contents
 
 1. [Site Design Considerations](#site-design-considerations)
-    * [Client Expectations](#client-expectations)
     * [Colour Scheme and Font](#colour-scheme-and-font)
     * [User Stories](#user-stories)
         * [EPIC 1 - User Accounts](#epic-1---user-accounts)
@@ -51,7 +50,20 @@ You can view a live version of the [website](https://island-flowers.herokuapp.co
 
 ## Site Design Considerations
 
-### Client Expectations
+Before commencing to design the site layout, I met with the client to discuss their needs and aspirations to ultimately try and discover the main aims behind having a website.
+
+The client currently operates via word of mouth and facebook and instagram posts. Whilst these social media channels are useful, on their own they do have a number of limitations, for example time sensitive posts could get lost in a facebook timeline, and not appear until a couple of days after the event.
+
+The site is envisiged to have a variety of visitor types, although female customers will make up the largest protion of these. Women are the largest consumers of flowers, with almost 80% percent of flower sales being attributed to female customers. [Source](https://www.hanafloristpos.com/flower-shop-statistics/#:~:text=Women%20are%20the%20largest%20consumers,who%20is%20actually%20buying%20them.) so the site should be geared towards a female audience in colour choice and even down to the tone of language used in blog posts.
+
+The client currently operates on a cash only basis, so the ability to take payments via an ecommerce platform will make it: a) easier for customers to pay, and b) it will be easier to track orders via the django database than the current system of receipt books. It will also enable the client to receve orders outside of normal business hours, therefore increasing the chance of sales as the store will be available 24 hours a day.
+
+The client hopes that having a web presence will expand her customer base. Amaltyics carried out on her current social media channels show that her content is only being served to a small number of very close potential customers, so an enhanced online presence should result in a larger viewing base.
+
+The client also wanted the product management element of the site to be as easy as possible, as the mother of two young children she finds it hard to deal with all the admin that can surround a site. To that end, a product and blog interface was included in the scope of the project so that the client could carry out as many actions as possible on the site as a superuser without having to log into the admin panel.
+
+The client was also keen that the site was future proofed as much as possible. For example, the client does not currently charge for delivery, but in case they decide to in the future a delivery cost variable was included in the data models, but set to zero, so this could easily be implemented in future. SKU was also treated in this manner. The client does not currently use SKU to manage products, but by including the field in the data models, this again can be used by the client when required.
+
 
 ### Colour Scheme and Font 
 
