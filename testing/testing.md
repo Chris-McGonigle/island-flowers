@@ -149,7 +149,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 ## Manual testing
 
- #### Responsive testing
+ ### Responsive testing
 
  The site was tested extensively using the dev tools facilties of Chrome, Safari and Firefox. It was tested against most popular makes of phones and tablets, as well as varying desptop screen resolutions. 
 
@@ -163,11 +163,11 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 <br>
 
 
- #### Element testing
+ ### Element testing
 
  All elements of the website were then manually tested to ensure they were working as expected, and expected customer journeys through the site with customer interaction points were also tested. These are detailed in the following tables.
 
- ##### Navigation Bar
+ #### Navigation Bar
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -191,7 +191,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 <br>
 
 
-##### Footer
+#### Footer
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -210,7 +210,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Home page
+#### Home page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -226,7 +226,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Products page
+#### Products page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -243,7 +243,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Individual Product page
+#### Individual Product page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -262,7 +262,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Product Management (Superuser Only)
+#### Product Management (Superuser Only)
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -279,7 +279,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Main Blog Page
+#### Main Blog Page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -295,7 +295,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Individual Blog page
+#### Individual Blog page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -313,7 +313,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Blog Management (Superuser Only)
+#### Blog Management (Superuser Only)
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -331,7 +331,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Shopping Bag
+#### Shopping Bag
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -350,7 +350,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Checkout Page
+#### Checkout Page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -367,7 +367,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Checkout Success Page
+#### Checkout Success Page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
@@ -381,12 +381,55 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-##### Custom 404 page
+#### Custom 404 page
 
 | Page/Element | Expected Outcome | Pass/Fail |
 |---|---|---|
 | Entering incorrect URL| Custom 404 page rendered | Pass |
 | Return Home button | Clicking link directs user to main home page | Pass |
+
+<br>
+
+[Back to element testing top](#element-testing)
+
+<br>
+
+## Customer purchase testing
+
+To test customer purchases, three scenarios were tested using the testing card details from the Stripe documentation.
+
+For each test, a purchase of the same three items was made. Test one was a check to ensure a not logged in user could make a purchase. Test two was to check a logged in user could make a purchase, and test three was to check that a order was still submitted via a webhook if the browser closed during the submit process.
+
+### User not logged in
+
+This test would be deemed a success if the order was received in the database, but did not have a user profile attached to it, meaning it was made by someone not in the user database.
+
+![Not logged in result](testing/images/not-logged-in.JPG)
+
+The order was processed with no user profile attached, the test was deemed a success.
+
+### User Logged in
+
+This test would be deemed a success if this time a user profile was attached to the order. This could also be tested by the profile page, ensuring that the order history appears on this page as well.
+
+![Logged in result](testing/images/logged-in.JPG)
+
+![Order History](testing/images/order-history.JPG)
+
+The order was processed and attached to the correct profile, and the order history page returned the correct details. This test was deemed a success.
+
+### Browser crash during order
+
+For this test, the aim was to simulate a browser crash, or power cut or similar as the user has just hit the submit button. During the submit overlay, the broswer will be closed on purpose to simulate this event.
+
+This check is to ensure that the order was still processed. This would be measured successfull if the stripe webhook handler returned a Created Order message. This would be the same for both logged in and logged out users.
+
+![Webhook result](testing/images/webhook.JPG)
+
+![Order Confirmed](testing/images/order.JPG)
+
+The test was deemed passed. As per the screenshots, the order was succesfully created in the database, and stripe confirms this with the Order created webhook message response.
+
 
 <br>
 

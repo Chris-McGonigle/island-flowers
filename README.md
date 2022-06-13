@@ -383,19 +383,47 @@ A dedicated testing section covering validator and manual testing can be found i
 Local deployment was carried out using the Command Line Interface. to enable this the following steps were carried out:
 
 1. Create a repository on GitHub.
-2. Clone the repository on your chosen source code editor (GitPod) using the clone link.
+2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
 3. Open the terminal within GitPod
 4. Enter "python3 manage.py runserver into the terminal.
-5. Go to local host address on my web browser.
+5. Go to localhost address on my web browser.
 6. All locally saved changes will show up here.
 
 For the final deployment to Heroku, the following was carried out:
-
-1. Uncomment the PostgreSQL databse from settings.py file.
-2. Set debug = False in settings.py file.
-3. Commit and push all files to GitHub
-4. In Heroku, remove the DISABLE_COLLECTSTATIC config var.
-5. In the deploy tab, go to the manual deploy sections and click deploy branch.
+1. Create Heroku App
+2. Install dj_database_url and psycopg2-binary in my local environment
+3. Freeze requirements.txt file
+4. In settings.py import dj_database_url
+5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
+6. Comment out the local default database
+7. Add the Heroku database url via dj_database_url.parse()
+8. Run migrations to the Postgres database
+9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
+10. Create a SuperUser for the Postgres database
+11. Configure the database so that when the app is running on Heroku it uses the Postgres database and when it's running locally it uses the SQLite database
+12. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app
+13. Disable Heroku collect static
+14. Add the Heroku hostname to allowed hosts in settings.py
+15. Generate a new Django secret key and add this to the Heroku config variables
+16. Replace the secret key in settings.py to grab it from the environment
+17. Set debug to True only if the environment is a development environment
+18. Commit changes and deploy to GitHub and Heroku
+19. Create an AWS account
+20. Create an S3 bucket
+21. Configure the S3 bucket settings and policies
+22. Create and configure the IAM service
+23. In the terminal install Boto3 and Django-storages
+24. Freeze requirements.txt file
+25. Add a statement to the AWS bucket if the environment is "USE_AWS"
+26. Add AWS keys to the Heroku config variables
+27. Create custom storage classes for media and static files
+28. In settings.py add a statement to use the static and media storage class and locations
+29. Commit and push to GitHub and Heroku
+30. In the S3 bucket create a new folder for media
+31. Upload all used images to the media file in the S3 bucket
+32. Add the Stripe keys to the Heroku config variables
+33. Create a new webhook endpoint from the Stripe dashboard
+34. Add all the Stripe keys to the Heroku config variables
 
 <br>
 
