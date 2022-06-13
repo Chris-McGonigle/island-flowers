@@ -17,9 +17,9 @@ During the construction process, the Dev Tools functionality of Chrome was used 
     * [Responsive testing](#responsive-testing)
     * [Element testing](#element-testing)
 3. [Customer purchase testing](#customer-purchase-testing)
-    * User not logged in
-    * User logged in
-    * User kicked out during submit process
+    * [User not logged in](#user-not-logged-in)
+    * [User logged in](#user-logged-in)
+    * [Browser crash during order](#browser-crash-during-order)
 
 
 ## Validator testing
