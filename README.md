@@ -178,7 +178,29 @@ It was chosen as it is a modern, clean legible font, that looks well across all 
 
 ### Wireframes
 
+#### Homepage
 
+![Homepage](/readme-images/wireframes/home.png)
+
+#### Products page
+
+![Products](/readme-images/wireframes/products.png)
+
+#### Single product page
+
+![Single Product](/readme-images/wireframes/single-product.png)
+
+#### Bag page
+
+![Bag](/readme-images/wireframes/bag.png)
+
+#### Checkout page
+
+![Checkout](/readme-images/wireframes/checkout.png)
+
+#### Blog
+
+![Blog](/readme-images/wireframes/blog.png)
 
 <br>
 
@@ -571,7 +593,7 @@ These terms could then be added to, or removed as deemed necessary, and with con
 
 ## Marketing
 
-The clients employs a number of marketing strategies to try and drive business leads. Due to the rural location of the business, word of mouth is a very important tool, but cannot be quantified, so a number of measurable activites is required which will in turn assist in showing the most effective strategies that convert into actual sales.
+The client employs a number of marketing strategies to try and drive business leads. Due to the rural location of the business, word of mouth is a very important tool, but cannot be quantified, so a number of measurable activites is required which will in turn assist in showing the most effective strategies that convert into actual sales.
 
 The website will build on existing social media channels. A facebook page was set up for the client, but as the client already has an existing facebook presence, the page was then deleted to ensure it did not interfere with the clients existing business, or be suspected as a cloned account.
 
@@ -583,11 +605,11 @@ Alongside Instagram, this is the current main method of conversing with potentia
 
 The addition of the blog to the website is hoped to have two outcomes. First, regular, high quality blog content helps the website search ranking on Google. A higher placement in search results due to continually adding content, instead of just leaving the site as is should in turn lead to more custom.
 
-The blog also highlights to site vistors other products they may not have considered, and also highlights flash sales and other promotions that the client may choose to run. Having this blog provides an extra free resource to get messaging out to the public.
+The blog also highlights to site vistors other products they may not have considered, and also highlights flash sales and other promotions that the client may choose to run. Having this blog provides an extra free resource to get messaging out to the public. The commenting section of the blog also helps to drive customer engagement and start conversation, all of which should help to turn leads into sales.
 
-A newsletter section was also added to reinforce this message. By utilising this format, the client can ensure that all customers on her list will receive news of upcoming offers etc in a way that the blog cannot (i.e. a blog post can only be read by a site vistor, where the newsletter will appear in all signed up users mailboxes)
+A newsletter section was also added to reinforce this message. By utilising this format, the client can ensure that all customers on her list will receive news of upcoming offers etc in a way that the blog cannot (i.e. a blog post can only be read by a site vistor, where the newsletter will appear in all signed up users mailboxes) The newsletter however could contain links to blog posts, so both means of communication to customers can be interlinked, instead of being standalone methods.
 
-Analytical tracking of blog visitors, and email tracking of the newsletter could then be implemented so the client has a better picture of the journy users take to her store, and in turn, with htis information, she can tailor content to an even greater degree, which should hopefully result in an improvement of sales.
+Analytical tracking of blog visitors, and email tracking of the newsletter could then be implemented so the client has a better picture of the journey users take to her store, and in turn, with this information, she can tailor content to an even greater degree, which should hopefully result in an improvement of sales.
 
 <br>
 
