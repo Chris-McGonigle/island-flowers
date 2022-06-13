@@ -4,9 +4,9 @@ Island Flowers by Sarah is a sole trader floristry business based in Enniskillen
 
 After losing her role as a childcare social worker during the pandemic, the client set about turning her flower arranging hobby into a viable business.
 
-Up until this point the client had been relying on word of mouth, Facebook and Instagram to drive business leads. 
+Up until this point the client has been relying on word of mouth, Facebook and Instagram to drive business leads. 
 
-After a succesful launch, the client now wants to build on her business, ad seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated website.
+After a succesful launch, the client now wants to build on her business, and seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated web presence.
 
 ## Desktop
 ![Desktop View](/readme-images/desktop.png)
@@ -20,6 +20,8 @@ You can view a live version of the [website](https://island-flowers.herokuapp.co
 ## Table of Contents
 
 1. [Site Design Considerations](#site-design-considerations)
+    * [Client Expectations](#client-expectations)
+    * [Colour Scheme and Font](#colour-scheme-and-font)
     * [User Stories](#user-stories)
         * [EPIC 1 - User Accounts](#epic-1---user-accounts)
         * [EPIC 2 - Shop Browsing](#epic-2---shop-browsing) 
@@ -48,6 +50,31 @@ You can view a live version of the [website](https://island-flowers.herokuapp.co
 
 
 ## Site Design Considerations
+
+### Client Expectations
+
+### Colour Scheme and Font 
+
+To assist the client in tying together her business elements in one cohesive brand, the decision was taken that the website styling should match as closely as possible the existing store logo that the client had designed when first setting up here business.
+
+The site logo was uploaded to [imagecolorpicker.com](https://imagecolorpicker.com/en) to determine the colours used in the existing site logo.
+
+![Site Logo Colours](/readme-images/logo-colors.png)
+
+* [#063549 - Tarawera](https://chir.ag/projects/name-that-color/#063549) was chosen for the site background
+
+* [#fcffff - Twilight Blue](https://chir.ag/projects/name-that-color/#FCFFFF) was chosen as the main text colour for the site
+
+* [#c7becd - Chatelle](https://chir.ag/projects/name-that-color/#C7BECD) was chosen as an accent colour for the product and blog cards
+
+* [#cfb87f - Tan](https://chir.ag/projects/name-that-color/#CFB87F) was selected as a highlighter colour, especially around hyperlinks on hover to bring the users attention to a call to action link.
+
+Using these existing colours means that the client does not have to start from fresh to rebrand her business, ultimately saving her time and money. This now ensures a consistency of branding and imaging across the clients social media platforms and now also her website.
+
+The [Poppins](https://fonts.google.com/specimen/Poppins) font from Google Fonts was then selected as the site font across all pages.
+
+It was chosen as it is a modern, clean legible font, that looks well across all screen sizes. It is a plain enough style as well that it does not conflict with the existing font used in the site logo, but instead complements it.
+
 
 ### User Stories
 
