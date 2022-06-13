@@ -89,6 +89,17 @@ The CSS was tested using [Jigsaw](https://jigsaw.w3.org/css-validator/).
 
 The site was tested for accessibility, performance and best practise using Google's [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool. The results were as follows:
 
+![Home Page](/testing/images/lh-home-1.JPG)
+![Products Page](/testing/images/lh-products.JPG)
+![Bag Page](/testing/images/lh-bag.JPG)
+![Checkout Page](/testing/images/lh-checkout.JPG)
+![Blog Page](/testing/images/lh-blog.JPG)
+![Profile Page](/testing/images/lh-profile.JPG)
+
+Overall the results were deemed to be satisfactory. The medium level of performance was investigated to see if it could be improved. Images had already been resized for web so this was not an available option. 
+
+In addition, as the performance difference between pages with images (such as homepage), and those without (such as profile) was negligible it was concluded that something else other than image size was to blame for this, perhaps the routing between Heroku, github and AWS slowed down site performance. If the website progressed into actual live production, this could be investigated further to try and improve these performance figures.
+
 <br>
 
 [Back to top](#table-of-contents)
@@ -404,7 +415,7 @@ For each test, a purchase of the same three items was made. Test one was a check
 
 This test would be deemed a success if the order was received in the database, but did not have a user profile attached to it, meaning it was made by someone not in the user database.
 
-![Not logged in result](testing/images/not-logged-in.JPG)
+![Not logged in result](/testing/images/not-logged-in.JPG)
 
 The order was processed with no user profile attached, the test was deemed a success.
 
@@ -412,9 +423,9 @@ The order was processed with no user profile attached, the test was deemed a suc
 
 This test would be deemed a success if this time a user profile was attached to the order. This could also be tested by the profile page, ensuring that the order history appears on this page as well.
 
-![Logged in result](testing/images/logged-in.JPG)
+![Logged in result](/testing/images/logged-in.JPG)
 
-![Order History](testing/images/order-history.JPG)
+![Order History](/testing/images/order-history.JPG)
 
 The order was processed and attached to the correct profile, and the order history page returned the correct details. This test was deemed a success.
 
@@ -424,9 +435,9 @@ For this test, the aim was to simulate a browser crash, or power cut or similar 
 
 This check is to ensure that the order was still processed. This would be measured successfull if the stripe webhook handler returned a Created Order message. This would be the same for both logged in and logged out users.
 
-![Webhook result](testing/images/webhook.JPG)
+![Webhook result](/testing/images/webhook.JPG)
 
-![Order Confirmed](testing/images/order.JPG)
+![Order Confirmed](/testing/images/order.JPG)
 
 The test was deemed passed. As per the screenshots, the order was succesfully created in the database, and stripe confirms this with the Order created webhook message response.
 
