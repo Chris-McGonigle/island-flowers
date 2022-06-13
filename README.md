@@ -375,13 +375,13 @@ This item was rectified by amending an indent in the orderlineitem totals functi
 
 #### Webhook errors
 
-After initial setup, stripe webhooks were failing. Stripe still received the order perfectly, but in the event of a system crash during ordering or similar, the webhook to create the order in the database was not happening, so theoretically, a user could place an order but the store never received it in the django database.
+After initial setup, stripe webhooks were failing. Stripe still received the order perfectly, but in the event of a system crash during ordering or similar, the webhook to create the order in the database was not happening, so theoretically, a user could place an order but the store might never receive it in the django database.
 
 After investigation, it was discoverd an extra underscore when setting the webhook signing handshake variable in settings.py. With this underscore removed, webhooks were now being sucessfully received, and where necessary, these webhooks can now create orders in the database.
 
 #### Quantity Selector error
 
-As outlined in project walkthroughs, an error on larger devices results in the expected outcome of the minus quantity buttn being blanked out when the quantity selector is at zero. I was unable to rectify this within the timescale, but as it does not effect the functionality of the site, this was deemed to be acceptable at this time. It is something I would look to fix in future iterations.
+As outlined in project walkthroughs, an error on larger devices results in the expected outcome of the minus quantity button being blanked out when the quantity selector is at zero. I was unable to rectify this within the timescale, but as it does not effect the functionality of the site, this was deemed to be acceptable at this time. It is something I would look to fix in future iterations.
 
 <br>
 
@@ -517,6 +517,24 @@ As outlined in project walkthroughs, an error on larger devices results in the e
 <br>
 
 ## Search Engine Optimisation
+
+To improve the search index rating on Google, research was carried out using a number of tools, such as [Wordtracker](https://www.wordtracker.com/) to search for relevant keywords to use in meta tags in the project head element.
+
+Search terms such as florist and flowers were used to return popular keywords. A number of short and long tail keywords were then selected and inputted into the head element of base.html.
+
+The selected keywords are:
+
+* flowers
+* florist
+* mothers day
+* florist in fermanagh
+* florist near me
+* enniskillen
+* sympathy flowers
+
+These keywords remain a work in progress however. As is normal practise, in production these keywords would be monitored via, for example, Google Analytics, to determine which terms are driving traffic to the site. 
+
+These terms could then be added to, or removed as deemed necessary, and with continual improvement and refinement of these over time should utlimately assist in the site ranking higher on Google.
 
 <br>
 
