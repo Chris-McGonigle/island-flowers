@@ -54,11 +54,11 @@ Before commencing to design the site layout, I met with the client to discuss th
 
 The client currently operates via word of mouth and facebook and instagram posts. Whilst these social media channels are useful, on their own they do have a number of limitations, for example time sensitive posts could get lost in a facebook timeline, and not appear until a couple of days after the event.
 
-The site is envisiged to have a variety of visitor types, although female customers will make up the largest protion of these. Women are the largest consumers of flowers, with almost 80% percent of flower sales being attributed to female customers. [Source](https://www.hanafloristpos.com/flower-shop-statistics/#:~:text=Women%20are%20the%20largest%20consumers,who%20is%20actually%20buying%20them.) so the site should be geared towards a female audience in colour choice and even down to the tone of language used in blog posts.
+The site is envisiged to have a variety of visitor types, although female customers will make up the largest protion of these. Women are the largest consumers of flowers, with almost 80% percent of flower sales being attributed to female customers, *[Source](https://www.hanafloristpos.com/flower-shop-statistics/#:~:text=Women%20are%20the%20largest%20consumers,who%20is%20actually%20buying%20them.)* so the site should be geared towards a female audience in colour choice and even down to the tone of language used in blog posts.
 
-The client currently operates on a cash only basis, so the ability to take payments via an ecommerce platform will make it: a) easier for customers to pay, and b) it will be easier to track orders via the django database than the current system of receipt books. It will also enable the client to receve orders outside of normal business hours, therefore increasing the chance of sales as the store will be available 24 hours a day.
+The client currently operates on a cash only basis, so the ability to take payments via an ecommerce platform will make it: a) easier for customers to pay, and b) it will be easier to track orders via the django database than the current system of receipt books. It will also enable the client to receive orders outside of normal business hours, therefore increasing the chance of sales as the store will be available 24 hours a day.
 
-The client hopes that having a web presence will expand her customer base. Amaltyics carried out on her current social media channels show that her content is only being served to a small number of very close potential customers, so an enhanced online presence should result in a larger viewing base.
+The client hopes that having a web presence will expand her customer base. Analtyics carried out on her current social media channels show that her content is only being served to a small number of very close potential customers, so an enhanced online presence should result in a larger viewing base.
 
 The client also wanted the product management element of the site to be as easy as possible, as the mother of two young children she finds it hard to deal with all the admin that can surround a site. To that end, a product and blog interface was included in the scope of the project so that the client could carry out as many actions as possible on the site as a superuser without having to log into the admin panel.
 
@@ -378,7 +378,7 @@ The following data models were used in the production of this website:
 
 The navigation bar contains a number of features vital to the smooth journey of a site visitor.
 
-The navbar conatins the site logo, which also doubles a site wide link back to the homepage. A search bar is also present, which will search by name and/or description. 
+The navbar contains the site logo, which also doubles as a site wide link back to the homepage. A search bar is also present, which will search by name and/or description. 
 
 Next is the account sign in icon. This will change depending on whether the user is a superuser or not. 
 
@@ -400,7 +400,7 @@ Finally, the bag icon contains a running subtotal of items added to it. It also 
 
 #### Nav Links
 
-Under the nav bar are three further navigation links. The first, Products, allows a user to filter all products by price or category. The category link allows the user to filter at category, and finally, the blog link directs the user to the main blog page.
+Under the nav bar are three further navigation links. The first, Products, allows a user to filter all products by price or category. The category link allows the user to filter by category, and finally, the blog link directs the user to the main blog page.
 
 ![Nav links](/readme-images/nav-links.JPG)
 
@@ -418,7 +418,7 @@ The image carousel on the homepage serves two purposes. First it displays an exa
 
 #### Latest Blog Posts
 
-The blog posts section renders out the last three blog posts made to the site and display them to the user with a short description and the time created. A user can navigate to the blog post by clicking on the post image, or via the 'Read more...' link.
+The blog posts section renders out the last three blog posts made to the site and displays them to the user with a short description and the time created. A user can navigate to the blog post by clicking on the post image, or via the 'Read more...' link.
 
 ![Latest Blog](/readme-images/latest-blog.JPG)
 
@@ -430,7 +430,7 @@ The blog posts section renders out the last three blog posts made to the site an
 
 #### About section
 
-The about section gives a little personal info about the client, and then gives text directions to the clients studio. A interactive Google map is also included here, with a marker set at the studio, to assist site users if they shold require to visit the client.
+The about section gives a little personal info about the client, and then gives text directions to the clients studio. A interactive Google map is also included here, with a marker set at the studio, to assist site users if they should require to visit the client.
 
 ![About](/readme-images/about.JPG)
 
@@ -443,9 +443,9 @@ The about section gives a little personal info about the client, and then gives 
 #### Footer
 
 The site footer houses a number of very important features.
-First of all, the owner contact details such as emal, phone, and social media channels are all contained here. Each link is clickable and opens in a new window.
+First of all, the owner contact details such as email, phone, and social media channels are all contained here. Each link is clickable and opens in a new window.
 
-The footer also displays the site opening hours, and also contains a quick links section to the site, with links similar to the nav bar, apart fro the nclusion of the Privacy Policy. the privacy policy is hosted by a third party and opens in a new window.
+The footer also displays the site opening hours, and also contains a quick links section to the site, with links similar to the nav bar, apart from the inclusion of the Privacy Policy. The privacy policy is hosted by a third party and opens in a new window.
 
 Finally, the newsletter sign up field is held in the footer. Users can enter their email to sign up to receive a newsletter. A link to unsubscribe from the newsletter is also included.
 
@@ -461,7 +461,7 @@ A Back to top button also in the bottom right of the user viewport. Users can us
 
 #### All Products Page
 
-The all products page lists all products currently avaiable for purchase on the store. Users are disaplyed an image, category and price of each item. Clicking on an individual card brings the user to the specific product page for that item.
+The all products page lists all products currently available for purchase on the store. Users are displayed an image, category and price of each item. Clicking on an individual card brings the user to the specific product page for that item.
 
 Users can also filter products by price, category, or name using the dropdown provided.
 
@@ -477,11 +477,11 @@ Edit and Delete Product links are displayed for the superuser only for ease of p
 
 #### Individual Product Page
 
-The individual products pages lists all the product details of the item selected. Users are displayed an image, category and price of each item, in addition to a full description of the item. 
+The individual products page lists all the product details of the item selected. Users are displayed an image, category and price of each item, in addition to a full description of the item. 
 
 Users can then select a quantity of the item to add to their bag, amend the amount of a current bag item, or use the 'Keep Shopping' button to return to the all products page.
 
-Should a user add an item to their bag, a confirmation message pops up, along with a current bag summary that directs the user to check out. Then can of course continue shopping and add more products to their bag.
+Should a user add an item to their bag, a confirmation message pops up, along with a current bag summary that directs the user to check out. They can of course continue shopping and add more products to their bag.
 
 As with the all products page, Edit and Delete Product links are displayed for the superuser only for ease of product management. 
 
@@ -511,9 +511,9 @@ A user can then opt to continue shopping, or to carry on to the checkout page.
 
 #### Checkout Page
 
-The checkout page is the second to last page on a users purchasing journey. on this page, a user is prompted to fill in their delivery details. They are also shown a final summary of their order.
+The checkout page is the second to last page on a users purchasing journey. On this page, a user is prompted to fill in their delivery details. They are also shown a final summary of their order.
 
-If logged in, a user is given the option to save their delivery details for later. if not logged in, a user is prompted to sign in to save their details. A user of course can continue a purchase without signing in, however, if they have signed in and alreadt agreed to have details saved previously, the user delivery details are entered by default.
+If logged in, a user is given the option to save their delivery details for later. If not logged in, a user is prompted to sign in to save their details. A user of course can continue a purchase without signing in, however, if they have signed in and already agreed to have details saved previously, the user's delivery details are entered by default.
 
 The user can also return to adjust their bag.
 
@@ -628,7 +628,7 @@ The below image shows a composite of these screens for illustration purposes onl
 
 ### Future Features
 
-There are a number of features that could be introduced in future iterations. These include:
+There are a number of features that could be introduced in future iterations. Some of these could include:
 
 1. Delivery charging
 2. Ability to like blog posts
@@ -646,7 +646,7 @@ There are a number of features that could be introduced in future iterations. Th
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the site markup.
 * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used to style the HTML content.
-* [Javascript](https://en.wikipedia.org/wiki/JavaScript) was used for the Browse Subjects pop up.
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactive elements.
 * [Python3](https://en.wikipedia.org/wiki/Python_programming_language) and the Django Framework was the language used to produce the databases.
 * [Black](https://github.com/psf/black) was used to format the Python Code
 * [Balsamiq](https://balsamiq.com/) was used to produce the site wireframes.
@@ -688,7 +688,7 @@ This item was rectified by amending an indent in the orderlineitem totals functi
 
 After initial setup, stripe webhooks were failing. Stripe still received the order perfectly, but in the event of a system crash during ordering or similar, the webhook to create the order in the database was not happening, so theoretically, a user could place an order but the store might never receive it in the django database.
 
-After investigation, it was discoverd an extra underscore when setting the webhook signing handshake variable in settings.py. With this underscore removed, webhooks were now being sucessfully received, and where necessary, these webhooks can now create orders in the database.
+After investigation, an extra underscore when setting the webhook signing handshake variable in settings.py was discovered. With this underscore removed, webhooks were now being sucessfully received, and where necessary, these webhooks can now create orders in the database.
 
 #### Quantity Selector error
 

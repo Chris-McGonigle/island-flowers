@@ -260,7 +260,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 |---|---|---|
 | Product Image | Clicking image opens image in a new tab | Pass |
 | Quantity Selectors | Up and down buttons change quantity amount | Pass |
-| Quantity Selectors minus disabled | Down buttons unhighlighted when selction at 1 | Fail |
+| Quantity Selectors minus disabled | Down buttons unhighlighted when selection at 1 | Fail |
 | Edit Link (superuser only) | Edit link only appears for superuser and when pressed edit product page opens and confirmation message given | Pass |
 | Delete Link (superuser only) | Delete link only appears for superuser and when pressed product is deleted and user given confirmation message | Pass |
 | Keep Shopping Button | Clicking button returns user to main products page | Pass |
@@ -431,7 +431,7 @@ The order was processed and attached to the correct profile, and the order histo
 
 ### Browser crash during order
 
-For this test, the aim was to simulate a browser crash, or power cut or similar as the user has just hit the submit button. During the submit overlay, the broswer will be closed on purpose to simulate this event.
+For this test, the aim was to simulate a browser crash, or power cut or similar as the user has just hit the submit button. During the submit overlay, the browser will be closed on purpose to simulate this event.
 
 This check is to ensure that the order was still processed. This would be measured successfull if the stripe webhook handler returned a Created Order message. This would be the same for both logged in and logged out users.
 
