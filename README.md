@@ -404,7 +404,7 @@ Under the nav bar are three further navigation links. The first, Products, allow
 
 ![Nav links](/readme-images/nav-links.JPG)
 
-### Image Carousel and Home button
+#### Image Carousel and Home button
 
 The image carousel on the homepage serves two purposes. First it displays an example of the products on offer, and second it holds the button to direct the user to the main products page.
 
@@ -416,7 +416,7 @@ The image carousel on the homepage serves two purposes. First it displays an exa
 
 <br>
 
-### Latest Blog Posts
+#### Latest Blog Posts
 
 The blog posts section renders out the last three blog posts made to the site and display them to the user with a short description and the time created. A user can navigate to the blog post by clicking on the post image, or via the 'Read more...' link.
 
@@ -428,7 +428,7 @@ The blog posts section renders out the last three blog posts made to the site an
 
 <br>
 
-### About section
+#### About section
 
 The about section gives a little personal info about the client, and then gives text directions to the clients studio. A interactive Google map is also included here, with a marker set at the studio, to assist site users if they shold require to visit the client.
 
@@ -440,7 +440,7 @@ The about section gives a little personal info about the client, and then gives 
 
 <br>
 
-### Footer
+#### Footer
 
 The site footer houses a number of very important features.
 First of all, the owner contact details such as emal, phone, and social media channels are all contained here. Each link is clickable and opens in a new window.
@@ -451,7 +451,7 @@ Finally, the newsletter sign up field is held in the footer. Users can enter the
 
 ![Footer](/readme-images/footer.JPG)
 
-A Back to top button also in the bottom right of the user viewport. Users can use this to navigate quicly to the top of the screen.
+A Back to top button also in the bottom right of the user viewport. Users can use this to navigate quickly to the top of the screen.
 
 <br>
 
@@ -459,9 +459,182 @@ A Back to top button also in the bottom right of the user viewport. Users can us
 
 <br>
 
+#### All Products Page
+
+The all products page lists all products currently avaiable for purchase on the store. Users are disaplyed an image, category and price of each item. Clicking on an individual card brings the user to the specific product page for that item.
+
+Users can also filter products by price, category, or name using the dropdown provided.
+
+Edit and Delete Product links are displayed for the superuser only for ease of product management. 
+
+![All Products Page](/readme-images/products.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Individual Product Page
+
+The individual products pages lists all the product details of the item selected. Users are displayed an image, category and price of each item, in addition to a full description of the item. 
+
+Users can then select a quantity of the item to add to their bag, amend the amount of a current bag item, or use the 'Keep Shopping' button to return to the all products page.
+
+Should a user add an item to their bag, a confirmation message pops up, along with a current bag summary that directs the user to check out. Then can of course continue shopping and add more products to their bag.
+
+As with the all products page, Edit and Delete Product links are displayed for the superuser only for ease of product management. 
+
+![Individual Product Page](/readme-images/single-product.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Shopping Bag
+
+When a user selects either the bag icon, or the Secure Checkout link in the toast pop up, the shopping bag page opens and displays to the user a summary of the items they have selected.
+
+Users are shown an image, description and price. They also have the ability to adjust the quantty of the item in the bag, ot to remove the bag altogether. All of these actions are displayed to the user via the toast pop up.
+
+A user can then opt to continue shopping, or to carry on to the checkout page.
+
+![Shopping Bag](/readme-images/bag.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Checkout Page
+
+The checkout page is the second to last page on a users purchasing journey. on this page, a user is prompted to fill in their delivery details. They are also shown a final summary of their order.
+
+If logged in, a user is given the option to save their delivery details for later. if not logged in, a user is prompted to sign in to save their details. A user of course can continue a purchase without signing in, however, if they have signed in and alreadt agreed to have details saved previously, the user delivery details are entered by default.
+
+The user can also return to adjust their bag.
+
+The stripe payment field is also contained here, and retunrs warning messages to the user if any validation errors occur.
+
+Finally, if a user opts to complete their order, a loading overlay appears, and if successful they are directed to the checkout success page.
+
+![Checkout](/readme-images/checkout.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Checkout Success
+
+Upon succesful completion of an order, a user is directed to the checkout success page.
+
+Here they receive confirmation of their order and their order number. This is also communicated to them via a toast pop up. Users are then asked if they would like to visit the blog. This is to try and direct people to investigate other areas of the website that they might otherwise ignore.
+
+![Checkout Success](/readme-images/success.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### My Profile page
+
+The profile page serves two purposes. Here a user can update and save their delivery details. In addition, if a user has been logged on during a purchase, they can view a history of their orders on their profile page.
+
+Clicking on one of these orders opens up the checkout success page from that order, but users are notified that they are viewing a historical order.
+
+![Profile](/readme-images/profile.JPG)
+
+![Historical order](/readme-images/order-history.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Blog Page
+
+The main blog page lists the most recent blog posts with the latest blog post appearing first. User are shown an image, descripiton and date posted
+
+Users can click on the image or the read more link to open an individual blog post.
+
+Superusers have the option to edit or delete blog posts from here. Superusers also have the option to use the 'Add Blog Post' button to add new content. As with the rest of the site, these options are hidden for all other users.
+
+![Blog page](/readme-images/blog.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Individual Blog Post
+
+The individual blog page lists all of the post content shown on the main blog page, but in addition, users can also comment on the blog if they are logged in.
+
+Nonlogged in users can still read all comments made, but they have to create an account or log in to make a comment. This is communicated to the user inplace of the comment box window when logged in. 
+
+Comments display the commenters name, the time since commenting, and the comment body.
+
+![Blog post](/readme-images/blog-post.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Product and Blog Management (Superusers only)
+
+Superusers can add and edit product and blog posts using the form management avaiable to them.
+
+Accesed from a link in the nav dropdown, or via a link on each post/product, a user can use either the product form or blog form to make their content. The superuser can add images if desired, and if not a placeholder image is used instead.
+
+Both these forms take the exact same format, with only the field labels being different.
+
+The below image shows a composite of these screens for illustration purposes only, but in production, each of these forms has their own page.
+
+![Admin](/readme-images/admin.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+#### Sign In/Up
+
+The sign in page allows users to create an account or sign into an existing account. Each action is confirmed by a toast pop up relayed to the user. 
+
+User input to these forms is handled by the built in allauth module.
+
+The below image shows a composite of these screens for illustration purposes only, but in production, each of these forms has their own page.
+
+![Sign Up/In](/readme-images/sign.JPG)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+
 ### Future Features
 
+There are a number of features that could be introduced in future iterations. These include:
 
+1. Delivery charging
+2. Ability to like blog posts
+3. Single sign on with social media account/apple ID or google ID
+3. Email notification to superuser of new order received
+4. Newsletter templates and mass email issue mechanism
 
 <br>
 
