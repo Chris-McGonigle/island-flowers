@@ -374,7 +374,29 @@ The following data models were used in the production of this website:
 
 ### Initial Deployment Features
 
+#### Navigation Bar
 
+The navigation bar contains a number of features vital to the smooth journey of a site visitor.
+
+The navbar conatins the site logo, which also doubles a site wide link back to the homepage. A serach bar is also present, which will search by name and/or description. 
+
+Next is the account sign in icon. This will change depending on wether the user is a superuser or not. 
+
+Finally, the bag icon contains a running subtotal of items added to it. It also serves as the link to open the site shopping bag page, and finally, toast warning messages appear in the section to convey information and confirmation to the user through out any tasks carried out, such as email sign up.
+
+![Navigation Bar](/readme-images/navbar.JPG)
+
+##### Ordinary User Menu
+
+![User Menu](/readme-images/ordinary-user.JPG)
+
+##### SuperUser Menu
+
+![Superuser Menu](/readme-images/superuser.JPG)
+
+##### Toast Message
+
+![Toast message](/readme-images/toast.JPG)
 
 <br>
 
