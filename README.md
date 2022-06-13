@@ -55,11 +55,11 @@ You can view a live version of the [website](https://island-flowers.herokuapp.co
 
 ### Colour Scheme and Font 
 
-To assist the client in tying together her business elements in one cohesive brand, the decision was taken that the website styling should match as closely as possible the existing store logo that the client had designed when first setting up here business.
+To assist the client in tying together her business elements in one cohesive brand, the decision was taken that the website styling should match as closely as possible the existing store logo that the client had designed when first setting up her business.
 
 The site logo was uploaded to [imagecolorpicker.com](https://imagecolorpicker.com/en) to determine the colours used in the existing site logo.
 
-![Site Logo Colours](/readme-images/logo-colors.png)
+![Site Logo Colours](/readme-images/logo-colors.JPG)
 
 * [#063549 - Tarawera](https://chir.ag/projects/name-that-color/#063549) was chosen for the site background
 
@@ -73,7 +73,7 @@ Using these existing colours means that the client does not have to start from f
 
 The [Poppins](https://fonts.google.com/specimen/Poppins) font from Google Fonts was then selected as the site font across all pages.
 
-It was chosen as it is a modern, clean legible font, that looks well across all screen sizes. It is a plain enough style as well that it does not conflict with the existing font used in the site logo, but instead complements it.
+It was chosen as it is a modern, clean legible font, that looks well across all screen sizes. It is a plain enough style as well that it does not conflict with the existing font used in the site logo, but instead compliments it.
 
 
 ### User Stories
@@ -194,7 +194,7 @@ EPICS were defined as User Accounts, Shop Browsing, Checkout & Bag, Site Admin a
 
 Must Have User stories were prioritised for completion first, and these were all implemented by project end. Once completed, tasks were moved to the Done pile. 
 
-You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowers/projects/1?fullscreen=true) to see the project progress. Three tasks remain outstanding at this time. It would be invisaged that these tasks would be completed in future iterations.
+You can view the [Kanban Boards](https://github.com/Chris-McGonigle/island-flowers/projects/1?fullscreen=true) to see the project progress. Three tasks remain outstanding at this time. It would be envisaged that these tasks would be completed in future iterations.
 
 <br>
 
@@ -570,6 +570,24 @@ These terms could then be added to, or removed as deemed necessary, and with con
 <br>
 
 ## Marketing
+
+The clients employs a number of marketing strategies to try and drive business leads. Due to the rural location of the business, word of mouth is a very important tool, but cannot be quantified, so a number of measurable activites is required which will in turn assist in showing the most effective strategies that convert into actual sales.
+
+The website will build on existing social media channels. A facebook page was set up for the client, but as the client already has an existing facebook presence, the page was then deleted to ensure it did not interfere with the clients existing business, or be suspected as a cloned account.
+
+Before deletion a screenshot was taken of the page setup.
+
+![Facebook page](/readme-images/facebook-page.png)
+
+Alongside Instagram, this is the current main method of conversing with potential customers for the client.
+
+The addition of the blog to the website is hoped to have two outcomes. First, regular, high quality blog content helps the website search ranking on Google. A higher placement in search results due to continually adding content, instead of just leaving the site as is should in turn lead to more custom.
+
+The blog also highlights to site vistors other products they may not have considered, and also highlights flash sales and other promotions that the client may choose to run. Having this blog provides an extra free resource to get messaging out to the public.
+
+A newsletter section was also added to reinforce this message. By utilising this format, the client can ensure that all customers on her list will receive news of upcoming offers etc in a way that the blog cannot (i.e. a blog post can only be read by a site vistor, where the newsletter will appear in all signed up users mailboxes)
+
+Analytical tracking of blog visitors, and email tracking of the newsletter could then be implemented so the client has a better picture of the journy users take to her store, and in turn, with htis information, she can tailor content to an even greater degree, which should hopefully result in an improvement of sales.
 
 <br>
 
