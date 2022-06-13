@@ -15,8 +15,11 @@ During the construction process, the Dev Tools functionality of Chrome was used 
     * [Pep8](#pep8)
 2. [Manual testing](#manual-testing)
     * [Responsive testing](#responsive-testing)
-    * [Element & Journey testing](#element-and-journey-testing)
-
+    * [Element testing](#element-testing)
+3. [Customer purchase testing](#customer-purchase-testing)
+    * User not logged in
+    * User logged in
+    * User kicked out during submit process
 
 
 ## Validator testing
@@ -33,7 +36,7 @@ A total of 22 errors and warnings were received on the first pass through the W3
 
 The 'li' tag as child of a nav element errors were ignored as this was the same process as used in the project walkthrough videos.
 
-The duplicate id 'user-options' warning was ignored as the validator is picking up the mobile and desktop versions of the nav bar account dropdowns, again matching the style as per the walkthrough videos.
+The duplicate id 'user-options' warning was ignored as the validator is picking up the mobile and desktop versions of the nav bar account dropdowns, again matching the style as per the walkthrough videos so this was ignored.
 
 The javascript type warnings were also ignored, again as the code matches that as shown by the instructor videos.
 
@@ -45,9 +48,7 @@ Tests on all four of these pages returned the same errors that were ignored in t
 
 3. [Bag](/testing/images/bag-errors.jpg)
 
-Running the bag app through the validator returned two errors. One was an unclosed outer div element which was added.
-
-The body tag error seemed to be rendered by the base.html template. Code was checked against the walkthrough project and appear to be the same so this error was ignored.
+Running the bag app through the validator returned two errors. One was an unclosed outer div element which was added. Closing this div removed the body tag error that had been received as well.
 
 <br>
 
@@ -112,11 +113,11 @@ The main site colours of #063549 and #fcffff were fed into the tool and the cont
 
 [JS Hint](https://jshint.com/) was used to to check for any errors within the JavaScript script files. 
 
-Stripe_elements.js in the checkout app retunred three warnings and no errors. The first two regarding template literal syntax was ignored, and the missing semicolon highlighted was added in.
+Stripe_elements.js in the checkout app returned three warnings and no errors. The first two regarding template literal syntax was ignored, and the missing semicolon highlighted was added in.
 
 ![stripe-elements.js](/testing/images/stripe-elements.JPG)
 
-The js within quantity_input_script.html in the producst app returned three warnings and no errors. Again these warnings were template literal warnings and could be ignored.
+The js within quantity_input_script.html in the products app returned three warnings and no errors. Again these warnings were template literal warnings and could be ignored.
 
 ![quantity_input_script.html](/testing/images/quantity-input.JPG)
 
@@ -162,7 +163,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 <br>
 
 
- #### Element and journey testing
+ #### Element testing
 
  All elements of the website were then manually tested to ensure they were working as expected, and expected customer journeys through the site with customer interaction points were also tested. These are detailed in the following tables.
 
@@ -185,7 +186,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -205,7 +206,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -221,7 +222,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -238,7 +239,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -257,7 +258,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -274,7 +275,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -290,7 +291,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -308,7 +309,7 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
 
@@ -319,15 +320,73 @@ Line too long errors were kept to an absolute minimum. On occasion such as in se
 | Add Blog link in navigation | Clicking link opens add blog page | Pass |
 | Cancel button | Clicking link returns user to blog page | Pass |
 | Add Post button | Clicking link adds blog to website. User returned confirmation message, blog appears in latest blog posts on homepage, and on main blog page | Pass |
+| Price field | Warning message appears if incorrect figure format entered | Pass |
 | Edit Post link | Clicking link opens edit post page with exsiting details prepopulated, confirmation message appears | Pass |
 | Cancel button | Clicking link returns user to blog post page | Pass |
 | Edit post button | Clicking link adds updated blog post product to website. User returned confirmation message, new blog details appears in main blog page and homepage if recent blog post | Pass |
 
 <br>
 
-[Back to element testing top](#element-and-journey-testing)
+[Back to element testing top](#element-testing)
 
 <br>
+
+##### Shopping Bag
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Bag Icon link (bag empty) | Clicking link opens bag with 'bag empty' warning message | Pass |
+| Bag Icon link (items in bag) | Clicking link opens bag with correct items selected shown | Pass |
+| Quantity selector | Clicking icons adjust quantity to desired number | Pass |
+| Quantity selector down arrow | Arrow is muted when quantity is one | Fail |
+| Quantity selector update link | Clicking link adjusts quantity in bag, warning message received | Pass |
+| Quantity selector remove link | Clicking link removes item from bag | Pass |
+| Keep shopping button | Clicking link returns user to main products page | Pass |
+| Secure Checkout button | Clicking link brings user to checkout page | Pass |
+
+<br>
+
+[Back to element testing top](#element-testing)
+
+<br>
+
+##### Checkout Page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Order Summary | Correct summary of items selected for purchase rendered on screen | Pass |
+| Stripe field | Charge amount matches amount in order summary | Pass |
+| User not logged in| User returned prompt to sign in or create account | Pass |
+| User logged in| User returned check box to save delivery information if wanted | Pass |
+| Adjust Bag button | Clicking link returns user to main shopping bag page | Pass |
+| Complete Order button | Clicking link starts loading overlay, order summary page appears and success message | Pass |
+
+<br>
+
+[Back to element testing top](#element-testing)
+
+<br>
+
+##### Checkout Success Page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Order Summary | Correct summary of items selected for purchase rendered on screen | Pass |
+| Order Summary Success message | Correct summary of items selected for purchase rendered on screen | Pass 
+| Blog button | Clicking link directs user to main blog page | Pass |
+
+<br>
+
+[Back to element testing top](#element-testing)
+
+<br>
+
+##### Custom 404 page
+
+| Page/Element | Expected Outcome | Pass/Fail |
+|---|---|---|
+| Entering incorrect URL| Custom 404 page rendered | Pass |
+| Return Home button | Clicking link directs user to main home page | Pass |
 
 <br>
 
