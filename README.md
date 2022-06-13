@@ -635,6 +635,7 @@ There are a number of features that could be introduced in future iterations. So
 3. Single sign on with social media account/apple ID or google ID
 3. Email notification to superuser of new order received
 4. Newsletter templates and mass email issue mechanism
+5. Reply to blog comment functionality
 
 <br>
 
