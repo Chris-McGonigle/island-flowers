@@ -6,7 +6,7 @@ After losing her role as a childcare social worker during the pandemic, the clie
 
 Up until this point the client had been relying on word of mouth, Facebook and Instagram to drive business leads. 
 
-After a succesful launch, the client now wants to build on ther business, ad seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated website.
+After a succesful launch, the client now wants to build on her business, ad seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated website.
 
 ## Desktop
 ![Desktop View](/readme-images/desktop.png)
@@ -377,19 +377,19 @@ A dedicated testing section covering validator and manual testing can be found i
 #### EPIC 1 Testing
 
 1. As a User, I want to be able to register for an account using my email address, so that I can save my details for future use.
-    * RESULT - 
+    * RESULT - TEST PASSED
 
 2. As a User, I want to be able to register for an account using a social media account, so that I can save my details for future use.
-    * RESULT -
+    * RESULT - TEST FAILED - TO BE INTRODUCED IN FUTURE ITERATION
 
 3. As a User, I want to receive confirmation I have registered, so that I check that my account was created successfully and that my email address was correctly entered.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 4. As a User, I want to be able to reset my password, so that I can regain access to my account in case I forget my password.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 5. As a User, I want to have a personalised profile page, so that I can view a history of my purchases.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 <br>
 
@@ -399,26 +399,26 @@ A dedicated testing section covering validator and manual testing can be found i
 
 #### EPIC 2 Testing
 
-1. As a User, I want to view al list of products, so that I can select the item I want to purchase.
-    * RESULT -
+1. As a User, I want to view all list of products, so that I can select the item I want to purchase.
+    * RESULT - TEST PASSED
 
 2. As a User, I want to be able to select an individual product, so that I can see the full details of that item including price, description and sizes if applicable.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 3. As a User, I want to be able to sort the products by price, so that I can see products in my price range.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 4. As a User, I want to be able to sort the products by category, so that I can filter to the type of product I am interested in.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 5. As a User, I want to be able to search for a product by name or description, so that I find a specific product I am interested in.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 6. As a User, I want to filter the search results by price or category, so that I can further narrow down my search to find the item I am interested in.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 7. As a User, I want to be able to add items to a basket, so that I can add multiple items before having to checkout.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 <br>
 
@@ -430,25 +430,25 @@ A dedicated testing section covering validator and manual testing can be found i
 #### EPIC 3 Testing
 
 1. As a User, I want to be able to see a list of my chosen products, so that I can confirm what I wish to purchase.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 2. As a User, I want to be able to amend the size and quantity selected, so that I easily amend my order if I have made an error.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 3. As a User, I want to be clearly shown the subtotal and shipping costs, so that I easily identify the total amount I have to pay.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 4. As a User, I want to to be able to choose different billing and shipping addresses, so that I can have the item sent elsewhere if required.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 5. As a User, I want to receive an email confirmation of my order, so that I can ensure that it was received by the vendor.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 6. As a User, I want to be able to purchase an item with out creating an account, so that I do not have to have my details saved by the vendor.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 7. As a User, I want to view an order success confirmation on screen, so that I can ensure my order was processed properly.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 <br>
 
@@ -459,16 +459,16 @@ A dedicated testing section covering validator and manual testing can be found i
 #### EPIC 4 Testing
 
 1. As a Site Owner, I want to be notified when a new account is created, so that I am able to confirm if the account is legitimate or a bot or a duplicate account.
-    * RESULT -
+    * RESULT - TEST FAILED - TO BE INTRODUCED IN FUTURE ITERATION
 
 2. As a Site Owner, I want to be able to easily add new products, so that I am able to spend as little time as possible when updating the site.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 3. As a Site Owner, I want to be able to easily update exisiting products, so that I can change descriptions, sizes or prices easily.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 4. As a Site Owner, I want to be able to easily delete an exisiting product, so that I .can remove items that are no longer for sale.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 <br>
 
@@ -479,19 +479,19 @@ A dedicated testing section covering validator and manual testing can be found i
 #### EPIC 5 Testing
 
 1. As a Site Owner, I want to be able to create blog posts, so that I can highlight any new products or events coming up.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 2. As a Site Owner, I want to have users to be able to comment on my posts, so that I produce interaction and receive feedback from customers.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 3. As a Site Owner, I want to give users ability to like posts, so that I can reaction to the product or post.
-    * RESULT -
+    * RESULT - TEST FAILED - TO BE INTRODUCED IN FUTURE ITERATION
 
 4. As a Site Owner, I want to have users create an acount before they can comment, so that I can moderate comments and stop anonymous commenting.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 5. As a Site Owner, I want to display most recent blog posts on the homepage, so that I showcase news and new products without a user having to navigate to the blog page.
-    * RESULT -
+    * RESULT - TEST PASSED
 
 <br>
 
