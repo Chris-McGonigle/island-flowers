@@ -8,7 +8,7 @@ Up until this point the client has been relying on word of mouth, Facebook and I
 
 After a succesful launch, the client now wants to build on her business, and seeing how useful a website has been for competitors, she now feels the time is right to set up her own dedicated web presence.
 
-You can view a live version of the [website](https://island-flowers.herokuapp.com/)
+You can view a live version of the [website](https://island-flowers-by-sarah.onrender.com/)
 
 ## Desktop
 ![Desktop View](/readme-images/desktop.png)
